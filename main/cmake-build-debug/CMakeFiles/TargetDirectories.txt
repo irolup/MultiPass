@@ -1,0 +1,5 @@
+/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/CMakeFiles/MultiPass.dir
+/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/CMakeFiles/MultiPass_autogen_timestamp_deps.dir
+/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/CMakeFiles/MultiPass_autogen.dir

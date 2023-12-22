@@ -1,0 +1,20 @@
+# ninja log v5
+0	132	1703212338490627567	MultiPass_autogen/timestamp	fbf07f53794a9d1
+0	132	1703212338490627567	MultiPass_autogen/mocs_compilation.cpp	fbf07f53794a9d1
+0	65	1703212549337225109	build.ninja	2d1b49168a7af46c
+132	799	1703212339158635797	CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o	52680b7825a0c5a6
+132	139	1703212338498627666	CMakeFiles/MultiPass.dir/Insta/Insta.cpp.o	89292a49cdf1c7d2
+132	805	1703212339162635846	CMakeFiles/MultiPass.dir/main.cpp.o	c299d9357b7f88ab
+132	804	1703212339162635846	CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o	9f1ec9ba1e2ca32b
+819	963	1703212339318637768	MultiPass	179152574441c3fa
+132	819	1703212339178636044	CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o	d4bf4344257a85fc
+1	132	1703212552469263695	MultiPass_autogen/timestamp	f23abb4629458999
+1	132	1703212552469263695	MultiPass_autogen/mocs_compilation.cpp	f23abb4629458999
+1	132	1703212552469263695	/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/MultiPass_autogen/timestamp	f23abb4629458999
+1	132	1703212552469263695	/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/MultiPass_autogen/mocs_compilation.cpp	f23abb4629458999
+132	139	1703212552477263793	CMakeFiles/MultiPass.dir/Insta/Insta.cpp.o	e0f2cf92cd5b991d
+132	810	1703212553149272072	CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o	6295d9ba0e346775
+132	813	1703212553153272122	CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o	563f83da13d47a57
+133	825	1703212553161272220	CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o	e58bcba66abdd1ca
+132	831	1703212553169272318	CMakeFiles/MultiPass.dir/main.cpp.o	fd7c998d9a0f3a61
+831	968	1703212553305273994	MultiPass	179152574441c3fa
