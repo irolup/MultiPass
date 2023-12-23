@@ -6,6 +6,7 @@
 #define INSTAAPP_REDDITDIALOG_H
 
 #include <QDialog>
+#include <QShowEvent>
 
 class QLabel;
 
@@ -15,6 +16,9 @@ Q_OBJECT
 
 public:
     explicit RedditDialog(QWidget *parent = nullptr);
+
+protected:
+    void showEvent(QShowEvent *event) override;
 
 private:
     QLabel *label; // Example label to show content
