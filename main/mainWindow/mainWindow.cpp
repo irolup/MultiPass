@@ -6,6 +6,9 @@
 #include <QPushButton>
 #include <QApplication>
 #include <QButtonGroup>
+#include "redditDialog.h"
+#include "SerialCommunication.h"
+#include "SerialCommunicationDialog.h"
 
 
 Window::Window(QWidget *parent) :
@@ -21,6 +24,7 @@ Window::Window(QWidget *parent) :
     auto *redditButton = new QPushButton("Reddit", this); // New Reddit button
     buttonGroup->addButton(redditButton);
     redditButton->setGeometry(10, 10, 80, 30); // Set coordinates and size for Reddit button
+    connect(redditButton, &QPushButton::clicked, this, &Window::openRedditSubWindow);
 
     //Insta button
     auto *instaButton = new QPushButton("Insta", this);
@@ -32,29 +36,23 @@ Window::Window(QWidget *parent) :
     buttonGroup->addButton(queueButton);
     queueButton->setGeometry(190, 10, 80, 30);
 
-    auto *otherButton1 = new QPushButton("Other", this);
-    buttonGroup->addButton(otherButton1);
-    otherButton1->setGeometry(280, 10, 80, 30);
+    auto *serialCommButton = new QPushButton("Serial Communication", this);
+    buttonGroup->addButton(serialCommButton);
+    serialCommButton->setGeometry(280, 10, 80, 30);
+    connect(serialCommButton, &QPushButton::clicked, this, &Window::openSerialCommunicationDialog);
 
 
 
-
-
-    //make connection
-    //connect(this, SIGNAL(counterReached()), QApplication::instance(), SLOT(quit()));
-    //connect(slider, SIGNAL(valueChanged(int)), progressBar, SLOT(setValue(int)));
 }
 
+    //Open the Dialog
+    void Window::openRedditSubWindow(){
+        redditDialog = new RedditDialog(this);
+        redditDialog->exec();
+    }
+    void Window::openSerialCommunicationDialog()
+    {
+        serialCommDialog = new SerialCommunicationDialog(this);
+        serialCommDialog->exec();
+    }
 
-//void Window::slotButtonClicked(bool checked)
-//{
-//    if (checked) {
-//        m_button->setText("Checked");
-//    } else {
-//        m_button->setText("Hello World");
-//    }
-//    m_counter++;
-//    if(m_counter == 10){
-//        emit counterReached();
-//    }
-//}

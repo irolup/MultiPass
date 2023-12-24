@@ -6,6 +6,7 @@
 #define MULTIPASS_CONTROLLER_H
 
 #include "mainWindow/mainWindow.h"
+#include "SerialCommunication/SerialCommunication.h"
 
 class Controller {
 public:

@@ -21,7 +21,7 @@ protected:
     void showEvent(QShowEvent *event) override;
 
 private:
-    QLabel *label; // Example label to show content
+    QLabel *label;
 };
 
 #endif // REDDITDIALOG_H

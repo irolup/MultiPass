@@ -1,96 +1,24 @@
 MultiPass_autogen/timestamp: \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompiler.cmake.in \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystem.cmake.in \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-FindBinUtils.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FeatureSummary.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindOpenGL.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake \
@@ -102,20 +30,26 @@ MultiPass_autogen/timestamp: \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/MacroAddFileDependencies.cmake \
-  /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Determine-CXX.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake \
   /home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake \
+  /home/irolup/CLionProjects/MultiPass/main/Autre/Autre.cpp \
+  /home/irolup/CLionProjects/MultiPass/main/Autre/Autre.h \
   /home/irolup/CLionProjects/MultiPass/main/CMakeLists.txt \
+  /home/irolup/CLionProjects/MultiPass/main/Controller.cpp \
+  /home/irolup/CLionProjects/MultiPass/main/Controller.h \
   /home/irolup/CLionProjects/MultiPass/main/Insta/Insta.cpp \
   /home/irolup/CLionProjects/MultiPass/main/Insta/Insta.h \
   /home/irolup/CLionProjects/MultiPass/main/Reddit/redditDialog.cpp \
   /home/irolup/CLionProjects/MultiPass/main/Reddit/redditDialog.h \
+  /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunication.cpp \
+  /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunication.h \
+  /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunicationDialog.cpp \
+  /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunicationDialog.h \
   CMakeFiles/3.27.8/CMakeCCompiler.cmake \
   CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.8/CMakeSystem.cmake \
@@ -123,6 +57,11 @@ MultiPass_autogen/timestamp: \
   /home/irolup/CLionProjects/MultiPass/main/main.cpp \
   /home/irolup/CLionProjects/MultiPass/main/mainWindow/mainWindow.cpp \
   /home/irolup/CLionProjects/MultiPass/main/mainWindow/mainWindow.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QList \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QObject \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QRect \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QSize \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q20functional.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q20type_traits.h \
@@ -151,6 +90,7 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontainerinfo.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontainertools_impl.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontiguouscache.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcoreevent.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdatastream.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdebug.h \
@@ -165,6 +105,7 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qglobalstatic.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qhash.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qhashfunctions.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiodevice.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiodevicebase.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiterable.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiterator.h \
@@ -180,6 +121,7 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qmetatype.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qminmax.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qnamespace.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qnativeinterface.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qnumeric.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qobject.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qobject_impl.h \
@@ -188,6 +130,7 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qoverload.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qpair.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qpoint.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qpointer.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qprocessordetection.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qrect.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qrefcount.h \
@@ -231,38 +174,57 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtversionchecks.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtypeinfo.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtypes.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qurl.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qutf8stringview.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvariant.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QShowEvent \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QTransform \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qaction.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qbitmap.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qbrush.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qcolor.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qcursor.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qevent.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qeventpoint.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qfont.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qfontinfo.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qfontmetrics.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qicon.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qinputdevice.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qkeysequence.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpaintdevice.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpalette.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixelformat.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixmap.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpointingdevice.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpolygon.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qregion.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qrgb.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qrgba64.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qscreen.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtgui-config.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtguiexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtguiglobal.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtransform.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPort \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialport.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportglobal.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QWidget \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractbutton.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
@@ -461,6 +423,14 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortAdditionalTargetInfo.cmake \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfig.cmake \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfigVersion.cmake \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfigVersionImpl.cmake \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortDependencies.cmake \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortTargets-relwithdebinfo.cmake \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortTargets.cmake \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort/Qt6SerialPortVersionlessTargets.cmake \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \

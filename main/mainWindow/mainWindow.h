@@ -6,9 +6,11 @@
 #define WINDOW_H
 
 #include <QWidget>
+#include <QShowEvent>
 
 class QPushButton;
 class RedditDialog;
+class SerialCommunicationDialog;
 class Window : public QWidget
 {
 Q_OBJECT
@@ -17,6 +19,8 @@ public:
     signals:
 
 private slots:
+    void openRedditSubWindow();
+    void openSerialCommunicationDialog();
 
 private:
     int m_counter;
@@ -25,6 +29,7 @@ private:
     QPushButton *queueButton;
     QPushButton *otherButton1;
     RedditDialog *redditDialog;
+    SerialCommunicationDialog *serialCommDialog;
 
 };
 #endif // WINDOW_H

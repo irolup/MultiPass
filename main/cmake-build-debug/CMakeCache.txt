@@ -28,7 +28,7 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -54,7 +54,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -339,6 +339,9 @@ Qt6GuiTools_DIR:PATH=/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6GuiTool
 //The directory containing a CMake configuration file for Qt6Gui.
 Qt6Gui_DIR:PATH=/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6Gui
 
+//The directory containing a CMake configuration file for Qt6SerialPort.
+Qt6SerialPort_DIR:PATH=/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort
+
 //The directory containing a CMake configuration file for Qt6WidgetsTools.
 Qt6WidgetsTools_DIR:PATH=/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6WidgetsTools
 
@@ -452,6 +455,8 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Test CMAKE_HAVE_LIBC_PTHREAD
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/irolup/CLionProjects/MultiPass/main
@@ -491,6 +496,8 @@ CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_MAKE_PROGRAM
+CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
 CMAKE_MODULE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_DEBUG
@@ -1004,6 +1011,8 @@ QT_FEATURE_neon:INTERNAL=OFF
 QT_FEATURE_network:INTERNAL=ON
 //Qt feature: no_direct_extern_access (from target Qt6::Core)
 QT_FEATURE_no_direct_extern_access:INTERNAL=OFF
+//Qt feature: ntddmodm (from target Qt6::SerialPort)
+QT_FEATURE_ntddmodm:INTERNAL=OFF
 //Qt feature: opengl (from target Qt6::Gui)
 QT_FEATURE_opengl:INTERNAL=ON
 //Qt feature: opengles2 (from target Qt6::Gui)

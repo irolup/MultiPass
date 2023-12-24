@@ -154,7 +154,7 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/c++"
 		},
 		{
@@ -282,7 +282,7 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/cc"
 		},
 		{
@@ -606,6 +606,18 @@
 			"value" : "1"
 		},
 		{
+			"name" : "CMAKE_HAVE_PTHREAD_H",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Have include pthread.h"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
 			"name" : "CMAKE_HOME_DIRECTORY",
 			"properties" : 
 			[
@@ -917,6 +929,10 @@
 			"name" : "CMAKE_MAKE_PROGRAM",
 			"properties" : 
 			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
 				{
 					"name" : "HELPSTRING",
 					"value" : "No help, variable specified on the command line."
@@ -4466,6 +4482,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "QT_FEATURE_ntddmodm",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: ntddmodm (from target Qt6::SerialPort)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_opengl",
 			"properties" : 
 			[
@@ -6624,6 +6652,18 @@
 			],
 			"type" : "PATH",
 			"value" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6Gui"
+		},
+		{
+			"name" : "Qt6SerialPort_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt6SerialPort."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6SerialPort"
 		},
 		{
 			"name" : "Qt6WidgetsTools_DIR",
