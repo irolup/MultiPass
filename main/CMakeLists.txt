@@ -31,6 +31,8 @@ add_executable(MultiPass main.cpp
         Autre/Autre.h
         SerialCommunication/SerialCommunicationDialog.cpp
         SerialCommunication/SerialCommunicationDialog.h
+        SerialCommunication/TransparentCircleWidget.cpp
+        SerialCommunication/TransparentCircleWidget.h
 )
 target_link_libraries(MultiPass PRIVATE Qt6::Core Qt6::Widgets ${OPENGL_LIBRARIES})
 target_link_libraries(MultiPass PRIVATE Qt6::SerialPort)

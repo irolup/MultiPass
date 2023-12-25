@@ -4,6 +4,11 @@
 #include <QDialog>
 #include <QShowEvent>
 #include <QPushButton>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QGraphicsPixmapItem>
+#include <QSlider>
+#include "TransparentCircleWidget.h"
 
 class QLabel;
 class SerialCommunicationDialog : public QDialog
@@ -16,14 +21,25 @@ public:
 private slots:
     void chooseFile();
     void connectToSerialPort();
+    void updateImageSize(int value);
 
 protected:
+    bool eventFilter(QObject *obj, QEvent *event) override;
+    void handleMouseMove(QMouseEvent *event);
+    void paintEvent(QPaintEvent *event) override;
     void showEvent(QShowEvent *event) override;
 private:
     QLabel *serialCommunication;
     QLabel *fileLabel;
     QPushButton *fileButton;
     QPushButton *connectButton;
+    QGraphicsView *imageView;
+    QGraphicsScene *imageScene;
+    QGraphicsPixmapItem *pixmapItem;
+    QPixmap originalPixmap;
+    TransparentCircleWidget *transparentCircleWidget;
+    QSlider *sizeSlider;
+
 
 };
 

@@ -135,3 +135,4 @@ void RedditDialog::showEvent(QShowEvent *event) {
     // Set the position of the layout when the dialog is shown
     layout()->setGeometry(QRect(0, 5, 200, 100));
 }
+

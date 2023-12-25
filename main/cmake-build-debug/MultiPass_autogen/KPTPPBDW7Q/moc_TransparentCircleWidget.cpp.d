@@ -1,11 +1,5 @@
-/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunicationDialog.cpp: /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunicationDialog.h \
+/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/MultiPass_autogen/KPTPPBDW7Q/moc_TransparentCircleWidget.cpp: /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/TransparentCircleWidget.h \
   /home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/MultiPass_autogen/moc_predefs.h \
-  /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/TransparentCircleWidget.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QList \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QObject \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QRect \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QSize \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q20functional.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q20type_traits.h \
@@ -34,7 +28,6 @@
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontainerinfo.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontainertools_impl.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontiguouscache.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcoreevent.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdatastream.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdebug.h \
@@ -49,7 +42,6 @@
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qglobalstatic.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qhash.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qhashfunctions.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiodevice.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiodevicebase.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiterable.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiterator.h \
@@ -65,7 +57,6 @@
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qmetatype.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qminmax.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qnamespace.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qnativeinterface.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qnumeric.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qobject.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qobject_impl.h \
@@ -74,7 +65,6 @@
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qoverload.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qpair.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qpoint.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qpointer.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qprocessordetection.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qrect.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qrefcount.h \
@@ -118,68 +108,37 @@
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtversionchecks.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtypeinfo.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtypes.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qurl.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qutf8stringview.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvariant.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QShowEvent \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QTransform \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qaction.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qbitmap.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qbrush.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qcolor.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qcursor.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qevent.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qeventpoint.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qfont.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qfontinfo.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qfontmetrics.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qicon.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qinputdevice.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qkeysequence.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpaintdevice.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpainter.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpalette.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpen.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixelformat.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixmap.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpointingdevice.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpolygon.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qregion.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qrgb.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qrgba64.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qscreen.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtextoption.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtgui-config.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtguiexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtguiglobal.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtransform.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsScene \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsView \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QSlider \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QWidget \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractbutton.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractslider.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsview.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qscrollarea.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qslider.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \

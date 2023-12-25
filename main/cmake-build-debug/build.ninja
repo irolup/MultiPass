@@ -121,6 +121,14 @@ build CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp
   OBJECT_DIR = CMakeFiles/MultiPass.dir
   OBJECT_FILE_DIR = CMakeFiles/MultiPass.dir/SerialCommunication
 
+build CMakeFiles/MultiPass.dir/SerialCommunication/TransparentCircleWidget.cpp.o: CXX_COMPILER__MultiPass_unscanned_Debug /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/TransparentCircleWidget.cpp || cmake_object_order_depends_target_MultiPass
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/MultiPass.dir/SerialCommunication/TransparentCircleWidget.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/irolup/CLionProjects/MultiPass/main/cmake-build-debug/MultiPass_autogen/include -I/home/irolup/CLionProjects/MultiPass/main/Reddit -I/home/irolup/CLionProjects/MultiPass/main/Insta -I/home/irolup/CLionProjects/MultiPass/main/mainWindow -I/home/irolup/CLionProjects/MultiPass/main/SerialCommunication -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/mkspecs/linux-g++ -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort
+  OBJECT_DIR = CMakeFiles/MultiPass.dir
+  OBJECT_FILE_DIR = CMakeFiles/MultiPass.dir/SerialCommunication
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target MultiPass
@@ -129,7 +137,7 @@ build CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp
 #############################################
 # Link the executable MultiPass
 
-build MultiPass: CXX_EXECUTABLE_LINKER__MultiPass_Debug CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o CMakeFiles/MultiPass.dir/main.cpp.o CMakeFiles/MultiPass.dir/Insta/Insta.cpp.o CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o CMakeFiles/MultiPass.dir/Controller.cpp.o CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.o CMakeFiles/MultiPass.dir/Autre/Autre.cpp.o CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o | /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Widgets.so.6.6.1 /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6SerialPort.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Gui.so.6.6.1 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Core.so.6.6.1 || MultiPass_autogen MultiPass_autogen_timestamp_deps
+build MultiPass: CXX_EXECUTABLE_LINKER__MultiPass_Debug CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o CMakeFiles/MultiPass.dir/main.cpp.o CMakeFiles/MultiPass.dir/Insta/Insta.cpp.o CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o CMakeFiles/MultiPass.dir/Controller.cpp.o CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.o CMakeFiles/MultiPass.dir/Autre/Autre.cpp.o CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o CMakeFiles/MultiPass.dir/SerialCommunication/TransparentCircleWidget.cpp.o | /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Widgets.so.6.6.1 /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6SerialPort.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Gui.so.6.6.1 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Core.so.6.6.1 || MultiPass_autogen MultiPass_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/irolup/Documents/Qt/6.6.1/gcc_64/lib  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Widgets.so.6.6.1  /usr/lib/x86_64-linux-gnu/libOpenGL.so  /usr/lib/x86_64-linux-gnu/libGLX.so  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6SerialPort.so.6.6.1  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Gui.so.6.6.1  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so  /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Core.so.6.6.1
   OBJECT_DIR = CMakeFiles/MultiPass.dir
@@ -187,7 +195,7 @@ build MultiPass_autogen/timestamp MultiPass_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Phony custom command for CMakeFiles/MultiPass_autogen_timestamp_deps
 
-build CMakeFiles/MultiPass_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MultiPass_autogen_timestamp_deps: phony /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Core.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/./libexec/moc /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Widgets.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6SerialPort.so.6.6.1
+build CMakeFiles/MultiPass_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MultiPass_autogen_timestamp_deps: phony /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Widgets.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/./libexec/moc /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Core.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6SerialPort.so.6.6.1
 
 
 #############################################

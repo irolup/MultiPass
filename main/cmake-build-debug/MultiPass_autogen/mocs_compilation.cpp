@@ -3,4 +3,5 @@
 #include "6AXXXXL7DY/moc_redditDialog.cpp"
 #include "KPTPPBDW7Q/moc_SerialCommunication.cpp"
 #include "KPTPPBDW7Q/moc_SerialCommunicationDialog.cpp"
+#include "KPTPPBDW7Q/moc_TransparentCircleWidget.cpp"
 #include "OVELE2FJD2/moc_mainWindow.cpp"

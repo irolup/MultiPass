@@ -50,6 +50,8 @@ MultiPass_autogen/timestamp: \
   /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunication.h \
   /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunicationDialog.cpp \
   /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunicationDialog.h \
+  /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/TransparentCircleWidget.cpp \
+  /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/TransparentCircleWidget.h \
   CMakeFiles/3.27.8/CMakeCCompiler.cmake \
   CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.8/CMakeSystem.cmake \
@@ -197,7 +199,10 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qinputdevice.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qkeysequence.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpaintdevice.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpainter.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpalette.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpen.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixelformat.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixmap.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpointingdevice.h \
@@ -206,6 +211,7 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qrgb.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qrgba64.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qscreen.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtextoption.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtgui-config.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtguiexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtguiglobal.h \
@@ -220,12 +226,24 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsScene \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsView \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QSlider \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QWidget \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractslider.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsview.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qscrollarea.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qslider.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \

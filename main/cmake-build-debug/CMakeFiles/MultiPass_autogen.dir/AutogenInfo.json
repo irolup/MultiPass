@@ -400,6 +400,12 @@
 			null
 		],
 		[
+			"/home/irolup/CLionProjects/MultiPass/main/SerialCommunication/TransparentCircleWidget.h",
+			"Mu",
+			"KPTPPBDW7Q/moc_TransparentCircleWidget.cpp",
+			null
+		],
+		[
 			"/home/irolup/CLionProjects/MultiPass/main/mainWindow/mainWindow.h",
 			"Mu",
 			"OVELE2FJD2/moc_mainWindow.cpp",
@@ -496,6 +502,11 @@
 		],
 		[
 			"/home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunicationDialog.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/irolup/CLionProjects/MultiPass/main/SerialCommunication/TransparentCircleWidget.cpp",
 			"Mu",
 			null
 		],
