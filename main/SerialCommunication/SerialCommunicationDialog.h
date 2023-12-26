@@ -27,7 +27,6 @@ private slots:
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
     void handleMouseMove(QMouseEvent *event);
-    //void paintEvent(QPaintEvent *event) override;
     void showEvent(QShowEvent *event) override;
 private:
     QLabel *serialCommunication;
@@ -40,7 +39,8 @@ private:
     QGraphicsPixmapItem *pixmapItem;
     QPixmap originalPixmap;
     TransparentCircleWidget *transparentCircleWidget;
-    QSlider *sizeSlider;
+    QWidget *leftLayoutWidget(QLayout *leftLayout);
+    QWidget *rightLayoutWidget(QLayout *rightLayout);
 
 
 };

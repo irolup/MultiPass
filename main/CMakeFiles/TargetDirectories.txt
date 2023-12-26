@@ -1,0 +1,4 @@
+/home/charlie/Documents/Multi/MultiPass/main/CMakeFiles/MultiPass.dir
+/home/charlie/Documents/Multi/MultiPass/main/CMakeFiles/edit_cache.dir
+/home/charlie/Documents/Multi/MultiPass/main/CMakeFiles/rebuild_cache.dir
+/home/charlie/Documents/Multi/MultiPass/main/CMakeFiles/MultiPass_autogen.dir

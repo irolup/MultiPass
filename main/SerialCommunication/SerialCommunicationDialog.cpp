@@ -10,100 +10,102 @@
 #include <QMouseEvent>
 #include <QPixmap>
 #include <QPoint>
+#include <QSplitter>
 
 SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(parent)
 {
+    // Set the title of the dialog
+    setWindowTitle("Serial communication");
+
+    // Set the minimum and maximum sizes for the dialog
+    setMinimumSize(1280, 960); // Adjust the values according to your needs
+    setMaximumSize(3000, 1300);
+
+    //Set up the layout
+    auto *mainWidget = new QWidget(this);
+    auto *mainSplitter = new QSplitter(Qt::Horizontal, this);
+    auto *mainLayout = new QHBoxLayout(this);
+
     // Set up the labels and other objects
     serialCommunication = new QLabel("Serial communication<br> for smart screen", this);
     fileLabel = new QLabel("Choose a file to resize:", this);
     resizeImageLabel = new QLabel("Resize image", this);
-
     transparentCircleWidget = new TransparentCircleWidget(this);
-
-
     fileButton = new QPushButton("Choose File", this);
     fileButton->setFixedHeight(30);  // Set the desired height
     fileButton->setFixedWidth(100);  // Set the desired width
-    connect(fileButton, &QPushButton::clicked, this, &SerialCommunicationDialog::chooseFile);
-
     connectButton = new QPushButton("Connect to Serial Port", this);
     connectButton->setFixedHeight(30);  // Set the desired height
     connectButton->setFixedWidth(150);  // Set the desired width
+    connect(fileButton, &QPushButton::clicked, this, &SerialCommunicationDialog::chooseFile);
     connect(connectButton, &QPushButton::clicked, this, &SerialCommunicationDialog::connectToSerialPort);
 
-    // Set up the left layout
+    // Set up the QGraphicsView
+    imageView = new QGraphicsView(this);
+    imageView->setViewport(new QWidget);
+    imageView->setRenderHint(QPainter::Antialiasing);
+    imageView->setRenderHint(QPainter::SmoothPixmapTransform);
+    imageScene = new QGraphicsScene(this);
+    imageScene->setBackgroundBrush(Qt::transparent);  // Add this line
+    pixmapItem = new QGraphicsPixmapItem;
+    imageScene->addItem(pixmapItem);
+    imageView->setScene(imageScene);
+    imageView->setMouseTracking(true);
+    imageView->installEventFilter(this);
+
     // Set up the left layout
     auto *leftLayout = new QVBoxLayout;  // Create a container for the widgets that should be resized
     leftLayout->addWidget(serialCommunication);
     leftLayout->addWidget(fileLabel);
     leftLayout->addWidget(fileButton);
     leftLayout->addWidget(connectButton);
+    leftLayout->addStretch();
     leftLayout->addSpacing(1);
     leftLayout->setSizeConstraint(QLayout::SetFixedSize);
 
-
-// Set up the right layout with QGraphicsView
-    imageView = new QGraphicsView(this);
-    imageView->setViewport(new QWidget);
-    imageView->setRenderHint(QPainter::Antialiasing);
-    imageView->setRenderHint(QPainter::SmoothPixmapTransform);
-
-    imageScene = new QGraphicsScene(this);
-    imageScene->setBackgroundBrush(Qt::transparent);  // Add this line
-    pixmapItem = new QGraphicsPixmapItem;
-
-    imageScene->addItem(pixmapItem);
-    imageView->setScene(imageScene);
-    imageView->setMouseTracking(true);
-    imageView->installEventFilter(this);
-
-
-
-
-// Set up the left layout with a grid
+    // Set up the left layout with a grid
     auto *rightLayout = new QGridLayout;
-
-
-    rightLayout->setSpacing(1);
-    //rightLayout->setColumnMinimumWidth(0, 900);
-    rightLayout->setRowMinimumHeight(0, 900);
+    rightLayout->setRowMinimumHeight(0, 10);
     rightLayout->addWidget(resizeImageLabel, 0, 0, Qt::AlignTop);
     rightLayout->addWidget(imageView,  1, 0, Qt::AlignTop);
     rightLayout->addWidget(transparentCircleWidget, 1, 0, Qt::AlignTop);
+    rightLayout->setSpacing(-10);
+    rightLayout->setSizeConstraint(QLayout::SetFixedSize);
+
+    mainSplitter->addWidget(leftLayoutWidget(leftLayout));
+    mainSplitter->addWidget(rightLayoutWidget(rightLayout));
 
 
-    // Set the minimum and maximum sizes for the dialog
-    setMinimumSize(800, 700); // Adjust the values according to your needs
-    setMaximumSize(3000, 1300); // Adjust the values according to your needs
+    // Add the mainSplitter to the mainLayout
+    mainLayout->addWidget(mainSplitter);
 
-    auto *mainWidget = new QWidget(this);
-    auto *mainLayout = new QHBoxLayout(this);
+    // Adjust alignment of the layout
+    mainLayout->setAlignment(mainSplitter, Qt::AlignTop);
 
-
-    mainLayout->addLayout(leftLayout);  // Use the leftLayout instead of leftLayout
-    mainLayout->addStretch();
-    mainLayout->addLayout(rightLayout);
-
-    // Adjust aligment of the layout
-    mainLayout->setAlignment(leftLayout, Qt::AlignTop);
-    mainLayout->setAlignment(rightLayout, Qt::AlignTop);
-    mainWidget->setLayout(mainLayout);
-
-
-    // SetLayout
+    // Set Layout
     setLayout(mainLayout);
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     adjustSize();
     // Set the distance between the left layout and the window's border
-    mainLayout->setContentsMargins(10, 10, 10, 10);
-
-    // Set the size of the dialog
-    setMinimumSize(800, 700);
-    setMaximumSize(3000, 1300);
-    // Set the title of the dialog
-    setWindowTitle("Serial communication");
-
+    mainLayout->setContentsMargins(1, 10, 10, 10);
 }
+QWidget *SerialCommunicationDialog::leftLayoutWidget(QLayout *leftLayout)
+{
+    auto *leftLayoutWidget = new QWidget;
+    leftLayoutWidget->setLayout(leftLayout);
+    return leftLayoutWidget;
+}
+
+QWidget *SerialCommunicationDialog::rightLayoutWidget(QLayout *rightLayout)
+{
+    auto *rightLayoutWidget = new QWidget;
+    rightLayoutWidget->setLayout(rightLayout);
+    return rightLayoutWidget;
+}
+
+
+
+
 
 void SerialCommunicationDialog::chooseFile()
 {
@@ -169,7 +171,7 @@ void SerialCommunicationDialog::chooseFile()
             int yOffset = 100;  // Adjust the y-coordinate as needed
 
             // Move and show the transparent circle
-            transparentCircleWidget->move(xOffset, yOffset);
+            //transparentCircleWidget->move(xOffset, yOffset);
             transparentCircleWidget->show();
         }
     }

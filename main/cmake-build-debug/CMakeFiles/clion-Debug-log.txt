@@ -1,5 +1,15 @@
-/home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/irolup/CLionProjects/MultiPass/main -B /home/irolup/CLionProjects/MultiPass/main/cmake-build-debug
+/home/charlie/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/charlie/Documents/Multi/MultiPass/main -B /home/charlie/Documents/Multi/MultiPass/main
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
 -- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: /home/irolup/CLionProjects/MultiPass/main/cmake-build-debug
+-- Configuring done (0.9s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/charlie/Documents/Multi/MultiPass/main
