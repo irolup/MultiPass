@@ -195,7 +195,7 @@ build MultiPass_autogen/timestamp MultiPass_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Phony custom command for CMakeFiles/MultiPass_autogen_timestamp_deps
 
-build CMakeFiles/MultiPass_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MultiPass_autogen_timestamp_deps: phony /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Widgets.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/./libexec/moc /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Core.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6SerialPort.so.6.6.1
+build CMakeFiles/MultiPass_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MultiPass_autogen_timestamp_deps: phony /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Core.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/./libexec/moc /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Widgets.so.6.6.1 /home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6SerialPort.so.6.6.1
 
 
 #############################################

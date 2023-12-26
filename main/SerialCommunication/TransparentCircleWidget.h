@@ -2,6 +2,7 @@
 #define TRANSPARENTCIRCLEWIDGET_H
 
 #include <QWidget>
+#include <QPainterPath>
 
 class TransparentCircleWidget : public QWidget
 {
@@ -12,8 +13,13 @@ public:
 
 public slots:
     void updateSize(int width, int height);
+
 protected:
     void paintEvent(QPaintEvent *event) override;
+
+private:
+    qreal opacity;
+
 };
 
 #endif // TRANSPARENTCIRCLEWIDGET_H

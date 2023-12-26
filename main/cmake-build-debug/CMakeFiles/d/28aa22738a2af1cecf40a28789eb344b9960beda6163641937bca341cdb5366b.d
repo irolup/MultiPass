@@ -61,6 +61,7 @@ MultiPass_autogen/timestamp: \
   /home/irolup/CLionProjects/MultiPass/main/mainWindow/mainWindow.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QList \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QObject \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QPoint \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QRect \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QSize \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
@@ -182,6 +183,7 @@ MultiPass_autogen/timestamp: \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QShowEvent \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QTransform \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qaction.h \

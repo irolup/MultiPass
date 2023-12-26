@@ -113,6 +113,7 @@
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qaction.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qbitmap.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qbrush.h \
@@ -125,6 +126,7 @@
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qkeysequence.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpaintdevice.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpalette.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixelformat.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixmap.h \

@@ -1,8 +1,11 @@
 #include "TransparentCircleWidget.h"
 #include <QPainter>
+#include <QPainterPath>
 
-TransparentCircleWidget::TransparentCircleWidget(QWidget *parent) : QWidget(parent)
-{
+TransparentCircleWidget::TransparentCircleWidget(QWidget *parent) : QWidget(parent), opacity(0) {
+    setFixedSize(480, 480);
+    setAttribute(Qt::WA_TranslucentBackground);
+    setAttribute(Qt::WA_NoSystemBackground, false);
 }
 
 void TransparentCircleWidget::updateSize(int width, int height)
@@ -16,15 +19,23 @@ void TransparentCircleWidget::paintEvent(QPaintEvent *event)
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing);
 
-    // Dessiner un fond blanc
+    // Draw a white background
     painter.fillRect(rect(), Qt::white);
 
-    // Dessiner un cercle transparent
-    int circleSize = 480;
-    int x = (width() - circleSize) / 2;
-    int y = (height() - circleSize) / 2;
+    // Create a circular clipping path
+    QPainterPath path;
 
-    painter.setBrush(QBrush(Qt::transparent));
-    painter.setPen(Qt::NoPen);
-    painter.drawEllipse(x, y, circleSize, circleSize);
+
+    int radius = qMin(width(), height()) / 4;
+    int centerX = width() / 2;
+    int centerY = height() / 2;
+
+    path.addEllipse(centerX - radius, centerY - radius, 2 * radius, 2 * radius);
+    painter.setClipPath(path);
+
+    painter.setOpacity(1);
+
+    painter.setBrush(Qt::transparent);
+    painter.drawEllipse(centerX - radius, centerY - radius, 2 * radius, 2 * radius);
 }
+

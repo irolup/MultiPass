@@ -8,6 +8,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsPixmapItem>
 #include <QSlider>
+#include <QPoint>
 #include "TransparentCircleWidget.h"
 
 class QLabel;
@@ -26,11 +27,12 @@ private slots:
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
     void handleMouseMove(QMouseEvent *event);
-    void paintEvent(QPaintEvent *event) override;
+    //void paintEvent(QPaintEvent *event) override;
     void showEvent(QShowEvent *event) override;
 private:
     QLabel *serialCommunication;
     QLabel *fileLabel;
+    QLabel *resizeImageLabel;
     QPushButton *fileButton;
     QPushButton *connectButton;
     QGraphicsView *imageView;
