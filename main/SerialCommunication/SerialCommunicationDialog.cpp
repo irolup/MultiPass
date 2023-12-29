@@ -22,7 +22,6 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     setMaximumSize(3000, 1300);
 
     //Set up the layout
-    auto *mainWidget = new QWidget(this);
     auto *mainSplitter = new QSplitter(Qt::Horizontal, this);
     auto *mainLayout = new QHBoxLayout(this);
 
@@ -53,22 +52,23 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     imageView->setMouseTracking(true);
     imageView->installEventFilter(this);
 
-    // Set up the left layout
-    auto *leftLayout = new QVBoxLayout;  // Create a container for the widgets that should be resized
-    leftLayout->addWidget(serialCommunication);
-    leftLayout->addWidget(fileLabel);
-    leftLayout->addWidget(fileButton);
-    leftLayout->addWidget(connectButton);
-    leftLayout->addStretch();
-    leftLayout->addSpacing(1);
+    //Set up the left layout as a grid for better Ui
+    auto *leftLayout = new QGridLayout;
+    leftLayout->setRowMinimumHeight(0, 10);
+    leftLayout->addWidget(serialCommunication, 0, 0);
+    leftLayout->addWidget(fileLabel, 1,0);
+    leftLayout->addWidget(fileButton, 2,0);
+    leftLayout->addWidget(connectButton, 3,0);
+    leftLayout->setSpacing(-10);
     leftLayout->setSizeConstraint(QLayout::SetFixedSize);
+
 
     // Set up the left layout with a grid
     auto *rightLayout = new QGridLayout;
     rightLayout->setRowMinimumHeight(0, 10);
-    rightLayout->addWidget(resizeImageLabel, 0, 0, Qt::AlignTop);
-    rightLayout->addWidget(imageView,  1, 0, Qt::AlignTop);
-    rightLayout->addWidget(transparentCircleWidget, 1, 0, Qt::AlignTop);
+    rightLayout->addWidget(resizeImageLabel, 0, 0);
+    rightLayout->addWidget(imageView,  1, 0);
+    rightLayout->addWidget(transparentCircleWidget, 1, 0);
     rightLayout->setSpacing(-10);
     rightLayout->setSizeConstraint(QLayout::SetFixedSize);
 
@@ -80,14 +80,14 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     mainLayout->addWidget(mainSplitter);
 
     // Adjust alignment of the layout
-    mainLayout->setAlignment(mainSplitter, Qt::AlignTop);
+    mainLayout->setAlignment(Qt::AlignTop | Qt::AlignLeft);
+
 
     // Set Layout
     setLayout(mainLayout);
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     adjustSize();
-    // Set the distance between the left layout and the window's border
-    mainLayout->setContentsMargins(1, 10, 10, 10);
+
 }
 QWidget *SerialCommunicationDialog::leftLayoutWidget(QLayout *leftLayout)
 {

@@ -363,6 +363,30 @@ CMakeFiles/MultiPass.dir/SerialCommunication/TransparentCircleWidget.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qbitmap.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qevent.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcoreevent.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qiodevice.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qpointer.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qurl.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qeventpoint.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpointingdevice.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qinputdevice.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qscreen.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QList \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qlist.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QObject \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qobject.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QRect \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qrect.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSize \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsize.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QTransform \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtransform.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qnativeinterface.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainter \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainter.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtextoption.h \

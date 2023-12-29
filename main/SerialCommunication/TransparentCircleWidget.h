@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QPainterPath>
+#include <QMouseEvent>
 
 class TransparentCircleWidget : public QWidget
 {
@@ -16,9 +17,13 @@ public slots:
 
 protected:
     void paintEvent(QPaintEvent *event) override;
+    void mousePressEvent(QMouseEvent *event);
 
 private:
     qreal opacity;
+
+    signals:
+    void widgetClicked(const QPoint);
 
 };
 

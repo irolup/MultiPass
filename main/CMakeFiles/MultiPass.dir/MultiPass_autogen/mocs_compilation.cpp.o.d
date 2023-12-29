@@ -428,6 +428,7 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: \
  /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/TransparentCircleWidget.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
  /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_TransparentCircleWidget.cpp \
  /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/TransparentCircleWidget.h \
  /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/OVELE2FJD2/moc_mainWindow.cpp \

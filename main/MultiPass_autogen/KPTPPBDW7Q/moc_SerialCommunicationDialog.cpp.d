@@ -125,6 +125,7 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QShowEvent \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QTransform \

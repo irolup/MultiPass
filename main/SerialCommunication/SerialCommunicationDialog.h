@@ -43,6 +43,7 @@ private:
     QWidget *rightLayoutWidget(QLayout *rightLayout);
 
 
+
 };
 
 #endif // SERIALCOMMUNICATIONDIALOG_H

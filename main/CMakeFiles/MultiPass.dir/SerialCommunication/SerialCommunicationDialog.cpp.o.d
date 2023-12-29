@@ -413,6 +413,7 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qwidget.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLabel \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlabel.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpicture.h \
@@ -457,7 +458,6 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainter \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainter.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPixmap \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpixmap.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QSplitter \

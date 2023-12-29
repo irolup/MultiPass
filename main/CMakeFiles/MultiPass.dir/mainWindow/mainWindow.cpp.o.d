@@ -433,4 +433,5 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qpoint.h \
  /home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/TransparentCircleWidget.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent

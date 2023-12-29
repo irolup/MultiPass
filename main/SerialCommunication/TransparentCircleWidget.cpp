@@ -39,3 +39,8 @@ void TransparentCircleWidget::paintEvent(QPaintEvent *event)
     painter.drawEllipse(centerX - radius, centerY - radius, 2 * radius, 2 * radius);
 }
 
+void TransparentCircleWidget::mousePressEvent(QMouseEvent *event){
+    //Emit a signal to notify the click event
+    emit widgetClicked(event->pos());
+}
+
