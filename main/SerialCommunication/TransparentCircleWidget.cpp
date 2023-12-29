@@ -19,9 +19,6 @@ void TransparentCircleWidget::paintEvent(QPaintEvent *event)
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing);
 
-    // Draw a white background
-    painter.fillRect(rect(), Qt::white);
-
     // Create a circular clipping path
     QPainterPath path;
 

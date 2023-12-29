@@ -41,7 +41,7 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
 
     // Set up the QGraphicsView
     imageView = new QGraphicsView(this);
-    imageView->setViewport(new QWidget);
+
     imageView->setRenderHint(QPainter::Antialiasing);
     imageView->setRenderHint(QPainter::SmoothPixmapTransform);
     imageScene = new QGraphicsScene(this);
@@ -51,6 +51,7 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     imageView->setScene(imageScene);
     imageView->setMouseTracking(true);
     imageView->installEventFilter(this);
+    transparentCircleWidget->hide();
 
     //Set up the left layout as a grid for better Ui
     auto *leftLayout = new QGridLayout;
@@ -117,6 +118,7 @@ void SerialCommunicationDialog::chooseFile()
 
         // Load the image into the QGraphicsView
         originalPixmap.load(filePath);
+        if (!originalPixmap.isNull()) {
 
         // Calculate the available space in the layout
         int maxWidth = imageView->maximumWidth();
@@ -149,31 +151,33 @@ void SerialCommunicationDialog::chooseFile()
         pixmapItem->setPixmap(originalPixmap.scaled(newWidth, newHeight, Qt::KeepAspectRatio));
         imageScene->setSceneRect(pixmapItem->pixmap().rect());
 
+
+        // Resize the QGraphicsView
+        imageView->setFixedSize(newWidth, newHeight);
+
         // Set initial position in the center of the grid
         int xOffset = (maxWidth - newWidth) / 2;
         int yOffset = (maxHeight - newHeight) / 2;
         pixmapItem->setPos(xOffset, yOffset);
-
-        // Resize the QGraphicsView
-        imageView->setFixedSize(newWidth, newHeight);
+        pixmapItem->setPos(0, 0);
 
         // Show the TransparentCircleWidget after loading the image
         if (!transparentCircleWidget->isVisible())
         {
             // Set the fixed size for the transparent circle
-            int initialCircleWidth = 50;  // Adjust the width as needed
-            int initialCircleHeight = 50; // Adjust the height as needed
+            int initialCircleWidth = 480;  // Adjust the width as needed
+            int initialCircleHeight = 480; // Adjust the height as needed
 
             transparentCircleWidget->setFixedSize(initialCircleWidth, initialCircleHeight);
 
-            // Set a static position for the transparent circle
-            int xOffset = 100;  // Adjust the x-coordinate as needed
-            int yOffset = 100;  // Adjust the y-coordinate as needed
+            // Set the position of the transparent circle
+            int circleXOffset = xOffset + (newWidth - initialCircleWidth) / 2;
+            int circleYOffset = yOffset + (newHeight - initialCircleHeight) / 2;
 
-            // Move and show the transparent circle
-            //transparentCircleWidget->move(xOffset, yOffset);
+            transparentCircleWidget->move(circleXOffset, circleYOffset);
             transparentCircleWidget->show();
         }
+    }
     }
     else
     {
@@ -228,47 +232,6 @@ void SerialCommunicationDialog::handleMouseMove(QMouseEvent *event)
         pixmapItem->setPos(newPos);
     }
 }
-void SerialCommunicationDialog::updateImageSize(int value)
-{
-    if (!originalPixmap.isNull())
-    {
-        // Calculate the new size based on the slider value
-        int newWidth = originalPixmap.width() * value / 100;
-        int newHeight = originalPixmap.height() * value / 100;
-
-        // Resize the pixmapItem
-        pixmapItem->setPixmap(originalPixmap.scaled(newWidth, newHeight, Qt::KeepAspectRatio));
-
-        // Update the scene rect
-        imageScene->setSceneRect(QRectF(0, 0, newWidth, newHeight));
-
-        // Update the position of the transparent circle
-        int xOffset = (newWidth - transparentCircleWidget->width()) / 2;
-        int yOffset = (newHeight - transparentCircleWidget->height()) / 2;
-
-        transparentCircleWidget->updateSize(newWidth, newHeight);
-        transparentCircleWidget->move(imageView->pos() + QPoint(xOffset, yOffset));
-
-        // Resize the QGraphicsView
-        imageView->setFixedSize(newWidth, newHeight);
-    }
-}
-
-//void SerialCommunicationDialog::paintEvent(QPaintEvent *event)
-//{
-//    Q_UNUSED(event);
-//
-//    QPainter painter(this);
-//    painter.setRenderHint(QPainter::Antialiasing);
-//
-//    // Draw a white background
-//
-//    // Draw a transparent circle
-//    painter.setBrush(QBrush(Qt::transparent));
-//    painter.setPen(Qt::NoPen);
-//    painter.drawEllipse(rect());
-//}
-
 
 void SerialCommunicationDialog::showEvent(QShowEvent *event)
 {

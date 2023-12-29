@@ -22,7 +22,7 @@ public:
 private slots:
     void chooseFile();
     void connectToSerialPort();
-    void updateImageSize(int value);
+
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;

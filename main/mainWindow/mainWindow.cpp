@@ -17,6 +17,7 @@ Window::Window(QWidget *parent) :
     // Set size of the window
     setFixedSize(900, 700);
 
+
     // Create and position the buttons
     QButtonGroup *buttonGroup = new QButtonGroup(this);
 
