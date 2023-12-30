@@ -7,6 +7,17 @@
 
 #include <QDialog>
 #include <QShowEvent>
+#include <QLabel>
+#include <QLineEdit>
+#include <QString>
+#include <QPushButton>
+#include <QPixmap>
+#include <QDir>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QGridLayout>
+
+
 
 class QLabel;
 
@@ -21,7 +32,25 @@ protected:
     void showEvent(QShowEvent *event) override;
 
 private:
-    QLabel *label;
+    QHBoxLayout *mainLayout;
+    QVBoxLayout *leftLayout;
+    QGridLayout *rightLayout;
+    QLabel *SubRedditLabel;
+    QLabel *ImageQuantitiesLabel;
+    QLabel *PathFolderLabel;
+    QLabel *ConfirmLabel;
+    QLabel *DownloadedImagesLabel;
+    QLineEdit *SubRedditLineEdit;
+    QLineEdit *ImageQuantitiesLineEdit;
+    QLineEdit *PathFolderLineEdit;
+    QPushButton *ConfirmButton;
+    QString folderPath;
+
+
+
+
+
+
 };
 
 #endif // REDDITDIALOG_H

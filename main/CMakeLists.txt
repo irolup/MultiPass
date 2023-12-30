@@ -9,7 +9,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/mainWindow)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Reddit)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/SerialCommunication)
 
-set(CMAKE_PREFIX_PATH "/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake")
+set(CMAKE_PREFIX_PATH "/home/charlie/Qt/6.6.1/gcc_64/lib/cmake")
 set(CMAKE_AUTOMOC ON)
 
 find_package(Qt6 COMPONENTS Core Widgets REQUIRED)

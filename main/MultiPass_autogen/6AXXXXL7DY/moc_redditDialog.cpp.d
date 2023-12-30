@@ -1,168 +1,200 @@
-/home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/6AXXXXL7DY/moc_redditDialog.cpp: /home/irolup/CLionProjects/MultiPass/main/Reddit/redditDialog.h \
-  /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/moc_predefs.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QList \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QObject \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QRect \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QSize \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q20functional.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q20type_traits.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/q23utility.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qalgorithms.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qanystringview.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qarraydata.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qarraydataops.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qarraydatapointer.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qassert.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qatomic.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qatomic_cxx11.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qbasicatomic.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qbindingstorage.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qbytearray.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qbytearraylist.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qbytearrayview.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qchar.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcompare.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcompare_impl.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcompilerdetection.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qconfig.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qconstructormacros.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontainerfwd.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontainerinfo.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontainertools_impl.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcontiguouscache.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qcoreevent.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdarwinhelpers.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdatastream.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdebug.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qexceptionhandling.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qflags.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qfloat16.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qforeach.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qfunctionaltools_impl.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qfunctionpointer.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qgenericatomic.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qglobal.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qglobalstatic.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qhash.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qhashfunctions.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiodevice.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiodevicebase.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiterable.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qiterator.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qlatin1stringview.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qline.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qlist.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qlogging.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qmalloc.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qmap.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qmargins.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qmath.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qmetacontainer.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qmetatype.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qminmax.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qnamespace.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qnativeinterface.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qnumeric.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qobject.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qobject_impl.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qobjectdefs.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qoverload.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qpair.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qpoint.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qpointer.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qprocessordetection.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qrect.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qrefcount.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qscopedpointer.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qscopeguard.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qset.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qshareddata.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qshareddata_impl.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qsize.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstring.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstringalgorithms.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstringbuilder.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstringconverter_base.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstringfwd.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstringlist.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstringliteral.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstringmatcher.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstringtokenizer.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qstringview.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qswap.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qsysinfo.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qsystemdetection.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtaggedpointer.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtclasshelpermacros.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtconfiginclude.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtconfigmacros.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtcore-config.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtcoreexports.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtdeprecationmarkers.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtenvironmentvariables.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtextstream.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtmetamacros.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtnoop.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtpreprocessorsupport.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtresource.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qttranslation.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qttypetraits.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtversion.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtversionchecks.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtypeinfo.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qtypes.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qurl.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qutf8stringview.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvariant.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QShowEvent \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QTransform \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qaction.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qbitmap.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qbrush.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qcolor.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qcursor.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qevent.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qeventpoint.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qfont.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qfontinfo.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qfontmetrics.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qicon.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qinputdevice.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qkeysequence.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpaintdevice.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpalette.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixelformat.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpixmap.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpointingdevice.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpolygon.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qregion.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qrgb.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qrgba64.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qscreen.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtgui-config.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtguiexports.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtguiglobal.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qtransform.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qwidget.h \
+/home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/6AXXXXL7DY/moc_redditDialog.cpp: /home/charlie/Documents/Multi/MultiPass/main/Reddit/redditDialog.h \
+  /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/moc_predefs.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QDir \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QList \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QObject \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QRect \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSize \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QString \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20functional.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20type_traits.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q23utility.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qalgorithms.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qanystringview.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qarraydata.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qarraydataops.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qarraydatapointer.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qassert.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qatomic.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qatomic_cxx11.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qbasicatomic.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qbindingstorage.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qbytearray.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qbytearraylist.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qbytearrayview.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcalendar.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qchar.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcompare.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcompare_impl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcompilerdetection.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qconfig.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qconstructormacros.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontainerfwd.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontainerinfo.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontainertools_impl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontiguouscache.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcoreevent.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdarwinhelpers.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdatastream.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdatetime.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdebug.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdir.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qexceptionhandling.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qfile.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qfiledevice.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qfileinfo.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qflags.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qfloat16.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qforeach.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qfunctionaltools_impl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qfunctionpointer.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qgenericatomic.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qglobal.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qglobalstatic.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qhash.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qhashfunctions.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qiodevice.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qiodevicebase.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qiterable.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qiterator.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qlatin1stringview.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qline.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qlist.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qlocale.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qlogging.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmalloc.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmap.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmargins.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmath.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmetacontainer.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmetatype.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qminmax.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qnamespace.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qnativeinterface.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qnumeric.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qobject.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qobject_impl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qobjectdefs.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qoverload.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qpair.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qpoint.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qpointer.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qprocessordetection.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qrect.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qrefcount.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qscopedpointer.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qscopeguard.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qset.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qshareddata.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qshareddata_impl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsize.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstring.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringalgorithms.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringbuilder.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringconverter_base.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringfwd.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringlist.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringliteral.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringmatcher.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringtokenizer.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringview.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qswap.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsysinfo.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsystemdetection.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtaggedpointer.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtclasshelpermacros.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtconfiginclude.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtconfigmacros.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtcore-config.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtcoreexports.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtdeprecationmarkers.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtenvironmentvariables.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtextstream.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtimezone.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtmetamacros.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtnoop.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtpreprocessorsupport.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtresource.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qttranslation.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qttypetraits.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtversion.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtversionchecks.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtypeinfo.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtypes.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qurl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qutf8stringview.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qvariant.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPixmap \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QShowEvent \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QTransform \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qaction.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qbitmap.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qbrush.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qcolor.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qcursor.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qevent.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qeventpoint.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qfont.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qfontinfo.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qfontmetrics.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qicon.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qinputdevice.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qkeysequence.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpaintdevice.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpalette.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpen.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpicture.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpixelformat.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpixmap.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpointingdevice.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpolygon.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qregion.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qrgb.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qrgba64.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qscreen.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtextcursor.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtextdocument.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtextformat.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtextoption.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtgui-config.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtguiexports.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtguiglobal.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtransform.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGridLayout \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QHBoxLayout \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLabel \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLineEdit \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QVBoxLayout \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qboxlayout.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgridlayout.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlabel.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayout.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayoutitem.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlineedit.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qwidget.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -180,10 +212,13 @@
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/bits/char_traits.h \
   /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/concept_check.h \
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
@@ -193,6 +228,10 @@
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/bits/fs_ops.h \
+  /usr/include/c++/11/bits/fs_path.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
@@ -200,25 +239,34 @@
   /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
+  /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/stl_algo.h \
@@ -257,6 +305,7 @@
   /usr/include/c++/11/climits \
   /usr/include/c++/11/clocale \
   /usr/include/c++/11/cmath \
+  /usr/include/c++/11/codecvt \
   /usr/include/c++/11/cstddef \
   /usr/include/c++/11/cstdint \
   /usr/include/c++/11/cstdio \
@@ -264,6 +313,7 @@
   /usr/include/c++/11/cstring \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/cwchar \
+  /usr/include/c++/11/cwctype \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/exception \
@@ -275,22 +325,29 @@
   /usr/include/c++/11/ext/numeric_traits.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/filesystem \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/istream \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/list \
+  /usr/include/c++/11/locale \
   /usr/include/c++/11/map \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/new \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/optional \
+  /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
   /usr/include/c++/11/ratio \
+  /usr/include/c++/11/sstream \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
   /usr/include/c++/11/string \
@@ -320,6 +377,7 @@
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -334,6 +392,7 @@
   /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -397,6 +456,7 @@
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
@@ -404,10 +464,14 @@
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \

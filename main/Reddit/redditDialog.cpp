@@ -4,44 +4,42 @@
 
 #include "redditDialog.h"
 #include <QVBoxLayout>
-#include <QLabel>
-#include <QLineEdit>
-#include <QString>
-#include <QPushButton>
-#include <QPixmap>
-#include <QDir>
+
 
 RedditDialog::RedditDialog(QWidget *parent) :
         QDialog(parent)
 {
-    // Set up the labels for left layout
-    auto SubRedditLabel = new QLabel("Please enter a sub-reddit URL:", this);
-    auto ImageQuantitiesLabel = new QLabel("Please enter the image quantities you<br> want to download (default = 10):", this);
-    auto PathFolderLabel = new QLabel("Please enter the path for downloads:", this);
-    auto ConfirmLabel = new QLabel("Confirm all:", this);
+    // Set the title of the dialog
+    setWindowTitle("Reddit");
 
+    // Set the minimum and maximum sizes for the dialog
+    setMinimumSize(1280, 960); // Adjust the values according to your needs
+    setMaximumSize(3000, 1300);
 
+    // Set up the main layout
+    mainLayout = new QHBoxLayout(this);
+    leftLayout = new QVBoxLayout;
+    rightLayout = new QGridLayout;
 
-    // Set up the LineEdit for left layout
-
-    // Set up the LineEdit for right layout
-    auto *SubRedditLineEdit = new QLineEdit(this);
-    auto *ImageQuantitiesLineEdit = new QLineEdit(this);
-    auto *PathFolderLineEdit = new QLineEdit(this);
-    // Adjusting the max size
+    // Set up the labels and other objects
+    //Left Layout objects
+    SubRedditLabel = new QLabel("Please enter a sub-reddit URL:", this);
+    ImageQuantitiesLabel = new QLabel("Please enter the image quantities you<br> want to download (default = 10):", this);
+    PathFolderLabel = new QLabel("Please enter the path for downloads:", this);
+    ConfirmLabel = new QLabel("Confirm all:", this);
+    SubRedditLineEdit = new QLineEdit(this);
     SubRedditLineEdit->setMaximumSize(200, 20);
+    ImageQuantitiesLineEdit = new QLineEdit(this);
     ImageQuantitiesLineEdit->setMaximumSize(200, 20);
+    PathFolderLineEdit = new QLineEdit(this);
     PathFolderLineEdit->setMaximumSize(200, 20);
-
-    // Set up the buttons for left layout
-    auto *ConfirmButton = new QPushButton("Confirm", this);
-    // Adjusting the max size
+    ConfirmButton = new QPushButton("Confirm", this);
     ConfirmButton->setMaximumSize(200, 20);
-
-    // Set up the buttons for right layout
+    //Right layout objects
+    DownloadedImagesLabel = new QLabel("Downloaded images", this);
+    //Add connect function
 
     // Set up the left layout
-    auto *leftLayout = new QVBoxLayout;
     leftLayout->addWidget(SubRedditLabel);
     leftLayout->addWidget(SubRedditLineEdit);
     leftLayout->addWidget(ImageQuantitiesLabel);
@@ -52,24 +50,14 @@ RedditDialog::RedditDialog(QWidget *parent) :
     leftLayout->addWidget(ConfirmButton);
     leftLayout->addSpacing(1);
 
-    // Set up the right layout
-
-
-
-    // Set up the left layout with a grid
-    auto *rightLayout = new QGridLayout;
-
     // Set up the labels for right layout
-    auto *infoLabel = new QLabel("Downloaded images", this);
-    rightLayout->addWidget(infoLabel, 0, 0, 1, 5, Qt::AlignTop);
+    rightLayout->addWidget(DownloadedImagesLabel, 0, 0, 1, 5, Qt::AlignTop);
 
 
     //Load an image on the left layout
-    QString folderPath = "/home/irolup/CLionProjects/images";
-
+    folderPath = "/home/irolup/CLionProjects/images";
     // Create a QDir object for the folder
     QDir imageDir(folderPath);
-
     // Filter the files to include only image files
     QStringList nameFilters;
     nameFilters << "*.png" << "*.jpg" << "*.jpeg" << "*.bmp"; // Add more extensions if needed
@@ -104,12 +92,7 @@ RedditDialog::RedditDialog(QWidget *parent) :
         }
     }
 
-
-
-
-
-    // Set up the main layout
-    auto *mainLayout = new QHBoxLayout(this);
+    //Set up the mainLayout
     mainLayout->addLayout(leftLayout);
     mainLayout->addLayout(rightLayout);
     //Ajust aligment of the layout
@@ -117,14 +100,8 @@ RedditDialog::RedditDialog(QWidget *parent) :
     mainLayout->setAlignment(rightLayout, Qt::AlignTop);
     //SetLayout
     setLayout(mainLayout);
-
     // Set the distance between the left layout and the window's border
     mainLayout->setContentsMargins(10, 10, 10, 10);
-
-    // Set the size of the dialog
-    setFixedSize(1000, 700);
-    // Set the title of the dialog
-    setWindowTitle("Reddit");
 }
 
 
