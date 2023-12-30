@@ -44,6 +44,7 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
 
     imageView->setRenderHint(QPainter::Antialiasing);
     imageView->setRenderHint(QPainter::SmoothPixmapTransform);
+    //imageView->setMaximumSize(1500, 1000);
     imageScene = new QGraphicsScene(this);
     imageScene->setBackgroundBrush(Qt::transparent);  // Add this line
     pixmapItem = new QGraphicsPixmapItem;
@@ -153,7 +154,7 @@ void SerialCommunicationDialog::chooseFile()
 
 
         // Resize the QGraphicsView
-        imageView->setFixedSize(newWidth, newHeight);
+        imageView->setFixedSize(1500, 1000);
 
         // Set initial position in the center of the grid
         int xOffset = (maxWidth - newWidth) / 2;
@@ -162,17 +163,20 @@ void SerialCommunicationDialog::chooseFile()
         pixmapItem->setPos(0, 0);
 
         // Show the TransparentCircleWidget after loading the image
-        if (!transparentCircleWidget->isVisible())
+        //if (!transparentCircleWidget->isVisible())
         {
             // Set the fixed size for the transparent circle
             int initialCircleWidth = 480;  // Adjust the width as needed
             int initialCircleHeight = 480; // Adjust the height as needed
 
-            transparentCircleWidget->setFixedSize(initialCircleWidth, initialCircleHeight);
+            //transparentCircleWidget->setFixedSize(initialCircleWidth, initialCircleHeight);
 
             // Set the position of the transparent circle
             int circleXOffset = xOffset + (newWidth - initialCircleWidth) / 2;
             int circleYOffset = yOffset + (newHeight - initialCircleHeight) / 2;
+
+            // Ensure that the transparent circle is on top of the loaded image
+            transparentCircleWidget->raise();
 
             transparentCircleWidget->move(circleXOffset, circleYOffset);
             transparentCircleWidget->show();
@@ -224,11 +228,19 @@ void SerialCommunicationDialog::handleMouseMove(QMouseEvent *event)
     else if (event->buttons() & Qt::RightButton)
     {
         // Move the image within the grid
-        QPoint newPos = event->pos().toPointF().toPoint();
-        int maxX = 900 - pixmapItem->pixmap().width();
-        int maxY = 900 - pixmapItem->pixmap().height();
-        newPos.setX(qBound(0, newPos.x(), maxX));
-        newPos.setY(qBound(0, newPos.y(), maxY));
+        QPointF newPos = event->pos();  // Use QPointF for more precision
+        int maxX = 1500 - pixmapItem->pixmap().width();  // Subtract pixmapItem width
+        int maxY = 1000 - pixmapItem->pixmap().height();
+
+        // Adjust the newPos based on the current position of the pixmapItem
+        newPos -= QPointF(pixmapItem->pixmap().width() / 2, pixmapItem->pixmap().height() / 2);
+
+        // Ensure the newPos stays within the bounds of the grid
+        newPos.setX(qBound(0.0, newPos.x(), static_cast<qreal>(maxX)));
+        newPos.setY(qBound(0.0, newPos.y(), static_cast<qreal>(maxY)));
+
+        newPos.setX(newPos.x() - pixmapItem->pixmap().width() / 2);
+
         pixmapItem->setPos(newPos);
     }
 }

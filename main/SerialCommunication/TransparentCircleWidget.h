@@ -13,17 +13,16 @@ public:
     TransparentCircleWidget(QWidget *parent = nullptr);
 
 public slots:
-    void updateSize(int width, int height);
 
 protected:
     void paintEvent(QPaintEvent *event) override;
-    void mousePressEvent(QMouseEvent *event);
+    //void mousePressEvent(QMouseEvent *event);
 
 private:
     qreal opacity;
 
     signals:
-    void widgetClicked(const QPoint);
+
 
 };
 

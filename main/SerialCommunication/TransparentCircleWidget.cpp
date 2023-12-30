@@ -8,10 +8,7 @@ TransparentCircleWidget::TransparentCircleWidget(QWidget *parent) : QWidget(pare
     setAttribute(Qt::WA_NoSystemBackground, false);
 }
 
-void TransparentCircleWidget::updateSize(int width, int height)
-{
-    setFixedSize(width, height);
-}
+
 void TransparentCircleWidget::paintEvent(QPaintEvent *event)
 {
     Q_UNUSED(event);
@@ -36,8 +33,5 @@ void TransparentCircleWidget::paintEvent(QPaintEvent *event)
     painter.drawEllipse(centerX - radius, centerY - radius, 2 * radius, 2 * radius);
 }
 
-void TransparentCircleWidget::mousePressEvent(QMouseEvent *event){
-    //Emit a signal to notify the click event
-    emit widgetClicked(event->pos());
-}
+
 
