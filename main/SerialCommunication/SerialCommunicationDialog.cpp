@@ -18,8 +18,8 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     setWindowTitle("Serial communication");
 
     // Set the minimum and maximum sizes for the dialog
-    setMinimumSize(1280, 960); // Adjust the values according to your needs
-    setMaximumSize(3000, 1300);
+    setMinimumSize(1980, 1080); // Adjust the values according to your needs
+    setMaximumSize(2560, 1440);
 
     //Set up the layout
     auto *mainSplitter = new QSplitter(Qt::Horizontal, this);
@@ -28,23 +28,40 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     // Set up the labels and other objects
     serialCommunication = new QLabel("Serial communication<br> for smart screen", this);
     fileLabel = new QLabel("Choose a file to resize:", this);
-    resizeImageLabel = new QLabel("Resize image", this);
+    resizeImageLabel = new QLabel("Resize image. Left Mouse Click for resizing and Right Mouse Click for moving.", this);
     transparentCircleWidget = new TransparentCircleWidget(this);
     fileButton = new QPushButton("Choose File", this);
     fileButton->setFixedHeight(30);  // Set the desired height
     fileButton->setFixedWidth(100);  // Set the desired width
-    connectButton = new QPushButton("Connect to Serial Port", this);
-    connectButton->setFixedHeight(30);  // Set the desired height
-    connectButton->setFixedWidth(150);  // Set the desired width
     connect(fileButton, &QPushButton::clicked, this, &SerialCommunicationDialog::chooseFile);
+    upButton = new QPushButton("↑", this);
+    upButton->setFixedSize(30,30);
+    connect(upButton, &QPushButton::clicked, this, &SerialCommunicationDialog::moveUp);
+    leftButton = new QPushButton("←", this);
+    leftButton->setFixedSize(30,30);
+    connect(leftButton, &QPushButton::clicked, this, &SerialCommunicationDialog::moveLeft);
+    rightButton = new QPushButton("→", this);
+    rightButton->setFixedSize(30,30);
+    connect(rightButton, &QPushButton::clicked, this, &SerialCommunicationDialog::moveRight);
+    downButton = new QPushButton("↓", this);
+    connect(downButton, &QPushButton::clicked, this, &SerialCommunicationDialog::moveDown);
+    downButton->setFixedSize(30,30);
+    resetButton = new QPushButton("Reset to 0,0", this);
+    connect(resetButton, &QPushButton::clicked, this, &SerialCommunicationDialog::reset);
+    decreaseImageSizeButton = new QPushButton("-", this);
+    decreaseImageSizeButton->setFixedSize(30,30);
+    connect(decreaseImageSizeButton, &QPushButton::clicked, this, &SerialCommunicationDialog::decreaseImageSize);
+    increaseImageSizeButton = new QPushButton("+", this);
+    increaseImageSizeButton->setFixedSize(30,30);
+    connect(increaseImageSizeButton, &QPushButton::clicked, this, &SerialCommunicationDialog::increaseImageSize);
+    connectButton = new QPushButton("Connect to Serial Port", this);
+    //connectButton->setFixedSize(30,150);  // Set the desired height
     connect(connectButton, &QPushButton::clicked, this, &SerialCommunicationDialog::connectToSerialPort);
 
     // Set up the QGraphicsView
     imageView = new QGraphicsView(this);
-
     imageView->setRenderHint(QPainter::Antialiasing);
     imageView->setRenderHint(QPainter::SmoothPixmapTransform);
-    //imageView->setMaximumSize(1500, 1000);
     imageScene = new QGraphicsScene(this);
     imageScene->setBackgroundBrush(Qt::transparent);  // Add this line
     pixmapItem = new QGraphicsPixmapItem;
@@ -60,8 +77,22 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     leftLayout->addWidget(serialCommunication, 0, 0);
     leftLayout->addWidget(fileLabel, 1,0);
     leftLayout->addWidget(fileButton, 2,0);
-    leftLayout->addWidget(connectButton, 3,0);
-    leftLayout->setSpacing(-10);
+    leftLayout->addWidget(upButton, 3,0);
+    leftLayout->setAlignment(upButton, Qt::AlignHCenter | Qt::AlignVCenter);
+    leftLayout->addWidget(leftButton, 4,0);
+    leftLayout->setAlignment(leftButton, Qt::AlignLeft);
+    leftLayout->addWidget(rightButton, 4,0);
+    leftLayout->setAlignment(rightButton, Qt::AlignRight);
+    leftLayout->addWidget(downButton, 5,0);
+    leftLayout->setAlignment(downButton, Qt::AlignHCenter | Qt::AlignVCenter);
+    leftLayout->addWidget(resetButton, 6,0);
+    leftLayout->setAlignment(resetButton, Qt::AlignLeft);
+    leftLayout->addWidget(decreaseImageSizeButton, 7,0);
+    leftLayout->setAlignment(decreaseImageSizeButton, Qt::AlignLeft);
+    leftLayout->addWidget(increaseImageSizeButton, 7,0);
+    leftLayout->setAlignment(increaseImageSizeButton, Qt::AlignRight);
+    leftLayout->addWidget(connectButton, 10,0);
+    leftLayout->setSpacing(-400);
     leftLayout->setSizeConstraint(QLayout::SetFixedSize);
 
 
@@ -71,7 +102,7 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     rightLayout->addWidget(resizeImageLabel, 0, 0);
     rightLayout->addWidget(imageView,  1, 0);
     rightLayout->addWidget(transparentCircleWidget, 1, 0);
-    rightLayout->setSpacing(-10);
+    rightLayout->setAlignment(transparentCircleWidget, Qt::AlignHCenter | Qt::AlignVCenter);
     rightLayout->setSizeConstraint(QLayout::SetFixedSize);
 
     mainSplitter->addWidget(leftLayoutWidget(leftLayout));
@@ -155,32 +186,11 @@ void SerialCommunicationDialog::chooseFile()
 
         // Resize the QGraphicsView
         imageView->setFixedSize(1500, 1000);
-
-        // Set initial position in the center of the grid
-        int xOffset = (maxWidth - newWidth) / 2;
-        int yOffset = (maxHeight - newHeight) / 2;
-        pixmapItem->setPos(xOffset, yOffset);
         pixmapItem->setPos(0, 0);
 
-        // Show the TransparentCircleWidget after loading the image
-        //if (!transparentCircleWidget->isVisible())
-        {
-            // Set the fixed size for the transparent circle
-            int initialCircleWidth = 480;  // Adjust the width as needed
-            int initialCircleHeight = 480; // Adjust the height as needed
-
-            //transparentCircleWidget->setFixedSize(initialCircleWidth, initialCircleHeight);
-
-            // Set the position of the transparent circle
-            int circleXOffset = xOffset + (newWidth - initialCircleWidth) / 2;
-            int circleYOffset = yOffset + (newHeight - initialCircleHeight) / 2;
-
-            // Ensure that the transparent circle is on top of the loaded image
-            transparentCircleWidget->raise();
-
-            transparentCircleWidget->move(circleXOffset, circleYOffset);
-            transparentCircleWidget->show();
-        }
+        // Ensure that the transparent circle is on top of the loaded image
+        transparentCircleWidget->raise();
+        transparentCircleWidget->show();
     }
     }
     else
@@ -217,31 +227,27 @@ void SerialCommunicationDialog::handleMouseMove(QMouseEvent *event)
 {
     if (event->buttons() & Qt::LeftButton)
     {
-        // Resize the image based on mouse movement
+        // Resize the image based on mouse movement from the bottom right corner
         int newWidth = event->pos().x() - pixmapItem->pos().x();
         int newHeight = event->pos().y() - pixmapItem->pos().y();
 
         pixmapItem->setPixmap(originalPixmap.scaled(newWidth, newHeight, Qt::KeepAspectRatio));
-
-
     }
     else if (event->buttons() & Qt::RightButton)
     {
         // Move the image within the grid
-        QPointF newPos = event->pos();  // Use QPointF for more precision
-        int maxX = 1500 - pixmapItem->pixmap().width();  // Subtract pixmapItem width
-        int maxY = 1000 - pixmapItem->pixmap().height();
+        int imageWidth = pixmapItem->pixmap().width();
+        int imageHeight = pixmapItem->pixmap().height();
 
-        // Adjust the newPos based on the current position of the pixmapItem
-        newPos -= QPointF(pixmapItem->pixmap().width() / 2, pixmapItem->pixmap().height() / 2);
+        int offSetX = imageWidth/2;
 
-        // Ensure the newPos stays within the bounds of the grid
-        newPos.setX(qBound(0.0, newPos.x(), static_cast<qreal>(maxX)));
-        newPos.setY(qBound(0.0, newPos.y(), static_cast<qreal>(maxY)));
+        // Calculate the new position of the top-left corner of the image
+        int newX = (event->pos().x()) - (imageHeight) ;
+        int newY = (event->pos().y() ) - (imageWidth/2);
 
-        newPos.setX(newPos.x() - pixmapItem->pixmap().width() / 2);
+        // Set the new position of the image without bounds checking
+        pixmapItem->setPos(newX, newY);
 
-        pixmapItem->setPos(newPos);
     }
 }
 
@@ -252,6 +258,46 @@ void SerialCommunicationDialog::showEvent(QShowEvent *event)
 
     // Set the position of the layout when the dialog is shown
     layout()->setGeometry(QRect(0, 5, 200, 100));
-
-
 }
+
+void SerialCommunicationDialog::moveUp() {
+    int newWidth = pixmapItem->pos().x();
+    int newHeight = pixmapItem->pos().y() - 5;
+    pixmapItem->setPos(newWidth, newHeight);
+}
+
+void SerialCommunicationDialog::reset() {
+    pixmapItem->setPos(0, 0);
+}
+
+void SerialCommunicationDialog::moveDown() {
+    int newWidth = pixmapItem->pos().x();
+    int newHeight = pixmapItem->pos().y() + 5;
+    pixmapItem->setPos(newWidth, newHeight);
+}
+
+void SerialCommunicationDialog::moveLeft() {
+    int newWidth = pixmapItem->pos().x() - 5;
+    pixmapItem->setPos(newWidth, pixmapItem->pos().y());
+}
+
+void SerialCommunicationDialog::moveRight() {
+    int newWidth = pixmapItem->pos().x() + 5;
+    pixmapItem->setPos(newWidth, pixmapItem->pos().y());
+}
+
+void SerialCommunicationDialog::decreaseImageSize() {
+    int newWidth = pixmapItem->pixmap().width() - 5;
+    int newHeight = pixmapItem->pixmap().height() - 5;
+    pixmapItem->setPixmap(originalPixmap.scaled(newWidth, newHeight, Qt::KeepAspectRatio));
+}
+
+void SerialCommunicationDialog::increaseImageSize() {
+    int newWidth = pixmapItem->pixmap().width() + 5;
+    int newHeight = pixmapItem->pixmap().height() + 5;
+    pixmapItem->setPixmap(originalPixmap.scaled(newWidth, newHeight, Qt::KeepAspectRatio));
+}
+
+
+
+
