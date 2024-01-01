@@ -29,6 +29,7 @@ private slots:
     void moveDown();
     void decreaseImageSize();
     void increaseImageSize();
+    void exportImage();
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
@@ -45,12 +46,14 @@ private:
     QPushButton *leftButton;
     QPushButton *rightButton;
     QPushButton *resetButton;
+    QPushButton *exportImageButton;
     QPushButton *decreaseImageSizeButton;
     QPushButton *increaseImageSizeButton;
     QGraphicsView *imageView;
     QGraphicsScene *imageScene;
     QGraphicsPixmapItem *pixmapItem;
     QPixmap originalPixmap;
+    QPixmap currentPixmap;
     TransparentCircleWidget *transparentCircleWidget;
     QWidget *leftLayoutWidget(QLayout *leftLayout);
     QWidget *rightLayoutWidget(QLayout *rightLayout);

@@ -54,6 +54,8 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     increaseImageSizeButton = new QPushButton("+", this);
     increaseImageSizeButton->setFixedSize(30,30);
     connect(increaseImageSizeButton, &QPushButton::clicked, this, &SerialCommunicationDialog::increaseImageSize);
+    exportImageButton = new QPushButton("Export image", this);
+    connect(exportImageButton, &QPushButton::clicked, this, &SerialCommunicationDialog::exportImage);
     connectButton = new QPushButton("Connect to Serial Port", this);
     //connectButton->setFixedSize(30,150);  // Set the desired height
     connect(connectButton, &QPushButton::clicked, this, &SerialCommunicationDialog::connectToSerialPort);
@@ -91,6 +93,7 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     leftLayout->setAlignment(decreaseImageSizeButton, Qt::AlignLeft);
     leftLayout->addWidget(increaseImageSizeButton, 7,0);
     leftLayout->setAlignment(increaseImageSizeButton, Qt::AlignRight);
+    leftLayout->addWidget(exportImageButton, 8,0);
     leftLayout->addWidget(connectButton, 10,0);
     leftLayout->setSpacing(-400);
     leftLayout->setSizeConstraint(QLayout::SetFixedSize);
@@ -297,6 +300,53 @@ void SerialCommunicationDialog::increaseImageSize() {
     int newHeight = pixmapItem->pixmap().height() + 5;
     pixmapItem->setPixmap(originalPixmap.scaled(newWidth, newHeight, Qt::KeepAspectRatio));
 }
+
+void SerialCommunicationDialog::exportImage()
+{
+    // Check if a file is selected
+    if (pixmapItem->pixmap().isNull())
+        return;
+
+    // Get the current position and size of the image item
+    QPointF currentItemPos = pixmapItem->pos();
+    QSizeF currentItemSize = pixmapItem->pixmap().size();
+
+    // Get the center of the grid
+    QPointF centerOfGrid(
+            transparentCircleWidget->pos().x() + transparentCircleWidget->width() / 2.0,
+            transparentCircleWidget->pos().y() + transparentCircleWidget->height() / 2.0
+    );
+
+    // Calculate the position and size relative to the transparent circle widget
+    qreal relativeX = std::max(currentItemPos.x(), 0.0);
+    qreal relativeY = std::max(currentItemPos.y(), 0.0);
+    qreal relativeWidth = std::min(static_cast<qreal>(currentItemSize.width() - relativeX), static_cast<qreal>(transparentCircleWidget->width()));
+    qreal relativeHeight = std::min(static_cast<qreal>(currentItemSize.height() - relativeY), static_cast<qreal>(transparentCircleWidget->height()));
+
+    // Calculate the centering offset of the circle
+    qreal offsetX = centerOfGrid.x() - currentItemPos.x() - 240;  // Assuming 480/2
+    qreal offsetY = centerOfGrid.y() - currentItemPos.y() - 240;  // Assuming 480/2
+
+    // Create a new pixmap with the size of the transparent circle widget (480x480)
+    QPixmap exportPixmap(480, 480);
+    exportPixmap.fill(Qt::transparent);
+
+    // Create a QPainter to draw the portion of the current image that fits within the transparent circle widget
+    QPainter painter(&exportPixmap);
+    painter.drawPixmap(0, 0, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
+
+    // Save the exported image to a file
+    QString exportFilePath = QFileDialog::getSaveFileName(this, "Export Image", "", "JPEG Files (*.jpg)");
+    if (!exportFilePath.isEmpty())
+    {
+        if (!exportPixmap.save(exportFilePath, "JPEG"))
+        {
+            qDebug() << "Error saving image. Error: " << exportPixmap.save(exportFilePath, "JPEG");
+        }
+    }
+    qDebug() << "Export File Path: " << exportFilePath;
+}
+
 
 
 
