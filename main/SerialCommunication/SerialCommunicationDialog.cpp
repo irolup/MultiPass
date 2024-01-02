@@ -189,7 +189,7 @@ void SerialCommunicationDialog::chooseFile()
 
         // Resize the QGraphicsView
         imageView->setFixedSize(1500, 1000);
-        pixmapItem->setPos(0, 0);
+        //pixmapItem->setPos(0, 0);
 
         // Ensure that the transparent circle is on top of the loaded image
         transparentCircleWidget->raise();
@@ -311,11 +311,16 @@ void SerialCommunicationDialog::exportImage()
     QPointF currentItemPos = pixmapItem->pos();
     QSizeF currentItemSize = pixmapItem->pixmap().size();
 
-    // Get the center of the grid
-    QPointF centerOfGrid(
-            transparentCircleWidget->pos().x() + transparentCircleWidget->width() / 2.0,
-            transparentCircleWidget->pos().y() + transparentCircleWidget->height() / 2.0
-    );
+    double totalPixelGaucheX =  (transparentCircleWidget->pos().x() + transparentCircleWidget->width() / 2.0) - ( pixmapItem->pixmap().width() )/2;
+    double totalPixelDroitX = pixmapItem->pixmap().width() /2;
+    double totalPixelHautY =  (transparentCircleWidget->pos().y() + transparentCircleWidget->height() / 2.0) - ( pixmapItem->pixmap().height() )/2;
+    double totalPixelBasY = pixmapItem->pixmap().height() /2;
+
+    //Pourcentage ratio
+    double deplacementPourcentageGaucheX = (((totalPixelGaucheX - (totalPixelGaucheX + currentItemPos.x())))/totalPixelGaucheX);
+    double deplacementPourcentageDroitX = (((totalPixelDroitX - (totalPixelDroitX - currentItemPos.x())))/totalPixelDroitX);
+    double deplacementPourcentageHautY = (((totalPixelHautY) - (totalPixelHautY + currentItemPos.y())))/totalPixelHautY;
+    double deplacementPourcentageBasY = (((totalPixelBasY) - (totalPixelBasY - currentItemPos.y())))/totalPixelBasY;
 
     // Calculate the position and size relative to the transparent circle widget
     qreal relativeX = std::max(currentItemPos.x(), 0.0);
@@ -323,9 +328,6 @@ void SerialCommunicationDialog::exportImage()
     qreal relativeWidth = std::min(static_cast<qreal>(currentItemSize.width() - relativeX), static_cast<qreal>(transparentCircleWidget->width()));
     qreal relativeHeight = std::min(static_cast<qreal>(currentItemSize.height() - relativeY), static_cast<qreal>(transparentCircleWidget->height()));
 
-    // Calculate the centering offset of the circle
-    qreal offsetX = centerOfGrid.x() - currentItemPos.x() - 240;  // Assuming 480/2
-    qreal offsetY = centerOfGrid.y() - currentItemPos.y() - 240;  // Assuming 480/2
 
     // Create a new pixmap with the size of the transparent circle widget (480x480)
     QPixmap exportPixmap(480, 480);
@@ -333,7 +335,25 @@ void SerialCommunicationDialog::exportImage()
 
     // Create a QPainter to draw the portion of the current image that fits within the transparent circle widget
     QPainter painter(&exportPixmap);
-    painter.drawPixmap(0, 0, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
+
+    //Cas si x position is at left
+    if(currentItemPos.x() < 0) {
+        if(currentItemPos.y() < 0 ){
+            painter.drawPixmap(-480 * deplacementPourcentageGaucheX , 480 * deplacementPourcentageBasY, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
+        }
+        if(currentItemPos.y() > 0 ){
+            painter.drawPixmap(-480 * deplacementPourcentageGaucheX , -480 * deplacementPourcentageHautY, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
+        }
+    }
+    //Cas si x position is at right
+    if(currentItemPos.x() > 0){
+        if(currentItemPos.y() < 0 ){
+            painter.drawPixmap(480 * deplacementPourcentageDroitX, 480 * deplacementPourcentageBasY, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
+        }
+        if(currentItemPos.y() > 0 ){
+            painter.drawPixmap(480 * deplacementPourcentageDroitX  , -480 * deplacementPourcentageHautY, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
+        }
+    }
 
     // Save the exported image to a file
     QString exportFilePath = QFileDialog::getSaveFileName(this, "Export Image", "", "JPEG Files (*.jpg)");
