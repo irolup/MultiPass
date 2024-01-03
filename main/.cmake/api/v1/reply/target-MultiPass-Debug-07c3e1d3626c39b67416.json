@@ -21,10 +21,10 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
-			"/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
-			"/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/cmake/Qt6/Qt6Config.cmake",
-			"/home/irolup/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindOpenGL.cmake"
+			"/home/charlie/Qt/6.6.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"/home/charlie/Qt/6.6.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"/home/charlie/Qt/6.6.1/gcc_64/lib/cmake/Qt6/Qt6Config.cmake",
+			"/home/charlie/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindOpenGL.cmake"
 		],
 		"nodes" : 
 		[
@@ -34,25 +34,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 21,
+				"line" : 23,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 37,
+				"line" : 39,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 38,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 15,
+				"line" : 17,
 				"parent" : 0
 			},
 			{
@@ -169,53 +169,53 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/include"
+					"path" : "/home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/include"
 				},
 				{
 					"backtrace" : 15,
-					"path" : "/home/irolup/CLionProjects/MultiPass/main/Reddit"
+					"path" : "/home/charlie/Documents/Multi/MultiPass/main/Reddit"
 				},
 				{
 					"backtrace" : 16,
-					"path" : "/home/irolup/CLionProjects/MultiPass/main/Insta"
+					"path" : "/home/charlie/Documents/Multi/MultiPass/main/Insta"
 				},
 				{
 					"backtrace" : 17,
-					"path" : "/home/irolup/CLionProjects/MultiPass/main/mainWindow"
+					"path" : "/home/charlie/Documents/Multi/MultiPass/main/mainWindow"
 				},
 				{
 					"backtrace" : 18,
-					"path" : "/home/irolup/CLionProjects/MultiPass/main/SerialCommunication"
+					"path" : "/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore"
+					"path" : "/home/charlie/Qt/6.6.1/gcc_64/include/QtCore"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/include"
+					"path" : "/home/charlie/Qt/6.6.1/gcc_64/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/mkspecs/linux-g++"
+					"path" : "/home/charlie/Qt/6.6.1/gcc_64/mkspecs/linux-g++"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets"
+					"path" : "/home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui"
+					"path" : "/home/charlie/Qt/6.6.1/gcc_64/include/QtGui"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort"
+					"path" : "/home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort"
 				}
 			],
 			"language" : "CXX",
@@ -264,12 +264,12 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/irolup/Documents/Qt/6.6.1/gcc_64/lib",
+				"fragment" : "-Wl,-rpath,/home/charlie/Qt/6.6.1/gcc_64/lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Widgets.so.6.6.1",
+				"fragment" : "/home/charlie/Qt/6.6.1/gcc_64/lib/libQt6Widgets.so.6.6.1",
 				"role" : "libraries"
 			},
 			{
@@ -284,12 +284,12 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6SerialPort.so.6.6.1",
+				"fragment" : "/home/charlie/Qt/6.6.1/gcc_64/lib/libQt6SerialPort.so.6.6.1",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 10,
-				"fragment" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Gui.so.6.6.1",
+				"fragment" : "/home/charlie/Qt/6.6.1/gcc_64/lib/libQt6Gui.so.6.6.1",
 				"role" : "libraries"
 			},
 			{
@@ -304,7 +304,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/home/irolup/Documents/Qt/6.6.1/gcc_64/lib/libQt6Core.so.6.6.1",
+				"fragment" : "/home/charlie/Qt/6.6.1/gcc_64/lib/libQt6Core.so.6.6.1",
 				"role" : "libraries"
 			}
 		],

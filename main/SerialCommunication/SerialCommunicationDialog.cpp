@@ -11,6 +11,9 @@
 #include <QPixmap>
 #include <QPoint>
 #include <QSplitter>
+#include <QStandardPaths>
+#include <QMessageBox>
+#include <QInputDialog>
 
 SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(parent)
 {
@@ -56,6 +59,8 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     connect(increaseImageSizeButton, &QPushButton::clicked, this, &SerialCommunicationDialog::increaseImageSize);
     exportImageButton = new QPushButton("Export image", this);
     connect(exportImageButton, &QPushButton::clicked, this, &SerialCommunicationDialog::exportImage);
+    imagePathFolderButton = new QPushButton("Open exported images path", this);
+    connect(imagePathFolderButton, &QPushButton::clicked, this, &SerialCommunicationDialog::openExportedImagesFolder);
     connectButton = new QPushButton("Connect to Serial Port", this);
     //connectButton->setFixedSize(30,150);  // Set the desired height
     connect(connectButton, &QPushButton::clicked, this, &SerialCommunicationDialog::connectToSerialPort);
@@ -93,8 +98,11 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     leftLayout->setAlignment(decreaseImageSizeButton, Qt::AlignLeft);
     leftLayout->addWidget(increaseImageSizeButton, 7,0);
     leftLayout->setAlignment(increaseImageSizeButton, Qt::AlignRight);
-    leftLayout->addWidget(exportImageButton, 8,0);
-    leftLayout->addWidget(connectButton, 10,0);
+    leftLayout->addWidget(exportImageButton, 9,0);
+    leftLayout->setAlignment(exportImageButton,Qt::AlignLeft);
+    leftLayout->addWidget(imagePathFolderButton, 10,0);
+    leftLayout->setAlignment(imagePathFolderButton,Qt::AlignLeft);
+    leftLayout->addWidget(connectButton, 11,0);
     leftLayout->setSpacing(-400);
     leftLayout->setSizeConstraint(QLayout::SetFixedSize);
 
@@ -322,6 +330,23 @@ void SerialCommunicationDialog::exportImage()
     double deplacementPourcentageHautY = (((totalPixelHautY) - (totalPixelHautY + currentItemPos.y())))/totalPixelHautY;
     double deplacementPourcentageBasY = (((totalPixelBasY) - (totalPixelBasY - currentItemPos.y())))/totalPixelBasY;
 
+    // Get the user's documents directory
+    QString documentsPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+
+    // Create the "exportedImages" folder in the documents directory if it doesn't exist
+    QString folderPath = documentsPath + "/exportedImagesMultiPass";
+    QDir folderDir(folderPath);
+    if (!folderDir.exists()) {
+        if (!folderDir.mkpath(folderPath)) {
+            qDebug() << "Error creating folder.";
+            return;
+        }
+    }
+    // Prompt the user for the image name
+    QString imageName = QInputDialog::getText(this, "Image Name", "Enter the image name:", QLineEdit::Normal, "exported_image");
+    if (imageName.isEmpty())
+        return;  // Return early if the user cancels or provides an empty name
+
     // Calculate the position and size relative to the transparent circle widget
     qreal relativeX = std::max(currentItemPos.x(), 0.0);
     qreal relativeY = std::max(currentItemPos.y(), 0.0);
@@ -355,16 +380,37 @@ void SerialCommunicationDialog::exportImage()
         }
     }
 
-    // Save the exported image to a file
-    QString exportFilePath = QFileDialog::getSaveFileName(this, "Export Image", "", "JPEG Files (*.jpg)");
+    // Save the exported image to the "exportedImages" folder in the documents directory
+    QString exportFilePath = folderPath + "/" + imageName + ".jpg";
+
+
     if (!exportFilePath.isEmpty())
     {
         if (!exportPixmap.save(exportFilePath, "JPEG"))
         {
-            qDebug() << "Error saving image. Error: " << exportPixmap.save(exportFilePath, "JPEG");
+            qDebug() << "Error saving image.";
         }
     }
+    QMessageBox::information(this, "Image Exported", imageName + exportFilePath);
     qDebug() << "Export File Path: " << exportFilePath;
+}
+
+void SerialCommunicationDialog::openExportedImagesFolder() {
+    // Get the user's documents directory
+    QString documentsPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+
+    // Create the "exportedImages" folder in the documents directory if it doesn't exist
+    QString folderPath = documentsPath + "/exportedImagesMultiPass";
+    QDir folderDir(folderPath);
+    if (!folderDir.exists()) {
+        if (!folderDir.mkpath(folderPath)) {
+            qDebug() << "Error creating folder.";
+            return;
+        }
+    }
+
+    // Open the folder dialog for viewing exported images
+    QFileDialog::getExistingDirectory(this, "Open Exported Images Folder", folderPath, QFileDialog::ReadOnly);
 }
 
 

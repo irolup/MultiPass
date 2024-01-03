@@ -30,6 +30,7 @@ private slots:
     void decreaseImageSize();
     void increaseImageSize();
     void exportImage();
+    void openExportedImagesFolder();
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
@@ -49,6 +50,7 @@ private:
     QPushButton *exportImageButton;
     QPushButton *decreaseImageSizeButton;
     QPushButton *increaseImageSizeButton;
+    QPushButton *imagePathFolderButton;
     QGraphicsView *imageView;
     QGraphicsScene *imageScene;
     QGraphicsPixmapItem *pixmapItem;
