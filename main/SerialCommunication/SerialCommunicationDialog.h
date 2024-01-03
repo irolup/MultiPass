@@ -22,7 +22,14 @@ public:
 private slots:
     void chooseFile();
     void connectToSerialPort();
-
+    void moveUp();
+    void moveLeft();
+    void moveRight();
+    void reset();
+    void moveDown();
+    void decreaseImageSize();
+    void increaseImageSize();
+    void exportImage();
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
@@ -34,10 +41,19 @@ private:
     QLabel *resizeImageLabel;
     QPushButton *fileButton;
     QPushButton *connectButton;
+    QPushButton *upButton;
+    QPushButton *downButton;
+    QPushButton *leftButton;
+    QPushButton *rightButton;
+    QPushButton *resetButton;
+    QPushButton *exportImageButton;
+    QPushButton *decreaseImageSizeButton;
+    QPushButton *increaseImageSizeButton;
     QGraphicsView *imageView;
     QGraphicsScene *imageScene;
     QGraphicsPixmapItem *pixmapItem;
     QPixmap originalPixmap;
+    QPixmap currentPixmap;
     TransparentCircleWidget *transparentCircleWidget;
     QWidget *leftLayoutWidget(QLayout *leftLayout);
     QWidget *rightLayoutWidget(QLayout *rightLayout);

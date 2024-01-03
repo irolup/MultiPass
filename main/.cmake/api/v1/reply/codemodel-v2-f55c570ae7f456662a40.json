@@ -41,7 +41,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MultiPass::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MultiPass-Debug-f3b3e104816da3aff46d.json",
+					"jsonFile" : "target-MultiPass-Debug-6367d131a20fee171d14.json",
 					"name" : "MultiPass",
 					"projectIndex" : 0
 				},
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/charlie/Documents/Multi/MultiPass/main",
-		"source" : "/home/charlie/Documents/Multi/MultiPass/main"
+		"build" : "/home/irolup/CLionProjects/MultiPass/main",
+		"source" : "/home/irolup/CLionProjects/MultiPass/main"
 	},
 	"version" : 
 	{

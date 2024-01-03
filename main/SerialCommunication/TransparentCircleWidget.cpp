@@ -3,17 +3,13 @@
 #include <QPainterPath>
 
 TransparentCircleWidget::TransparentCircleWidget(QWidget *parent) : QWidget(parent), opacity(0) {
-    setFixedSize(480, 480);
+    int diameter = 480;  // Set the diameter of the circular widget
+    setFixedSize(diameter, diameter);
     setAttribute(Qt::WA_TranslucentBackground);
     setAttribute(Qt::WA_NoSystemBackground, false);
 }
 
-void TransparentCircleWidget::updateSize(int width, int height)
-{
-    setFixedSize(width, height);
-}
-void TransparentCircleWidget::paintEvent(QPaintEvent *event)
-{
+void TransparentCircleWidget::paintEvent(QPaintEvent *event) {
     Q_UNUSED(event);
 
     QPainter painter(this);
@@ -22,8 +18,7 @@ void TransparentCircleWidget::paintEvent(QPaintEvent *event)
     // Create a circular clipping path
     QPainterPath path;
 
-
-    int radius = qMin(width(), height()) / 4;
+    int radius = width() / 2;  // Set the radius to half of the widget width
     int centerX = width() / 2;
     int centerY = height() / 2;
 
@@ -36,8 +31,5 @@ void TransparentCircleWidget::paintEvent(QPaintEvent *event)
     painter.drawEllipse(centerX - radius, centerY - radius, 2 * radius, 2 * radius);
 }
 
-void TransparentCircleWidget::mousePressEvent(QMouseEvent *event){
-    //Emit a signal to notify the click event
-    emit widgetClicked(event->pos());
-}
+
 
