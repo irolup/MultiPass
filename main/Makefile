@@ -286,6 +286,30 @@ SerialCommunication/SerialCommunication.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MultiPass.dir/build.make CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.s
 .PHONY : SerialCommunication/SerialCommunication.cpp.s
 
+SerialCommunication/SerialCommunicationControler.o: SerialCommunication/SerialCommunicationControler.cpp.o
+.PHONY : SerialCommunication/SerialCommunicationControler.o
+
+# target to build an object file
+SerialCommunication/SerialCommunicationControler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MultiPass.dir/build.make CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationControler.cpp.o
+.PHONY : SerialCommunication/SerialCommunicationControler.cpp.o
+
+SerialCommunication/SerialCommunicationControler.i: SerialCommunication/SerialCommunicationControler.cpp.i
+.PHONY : SerialCommunication/SerialCommunicationControler.i
+
+# target to preprocess a source file
+SerialCommunication/SerialCommunicationControler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MultiPass.dir/build.make CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationControler.cpp.i
+.PHONY : SerialCommunication/SerialCommunicationControler.cpp.i
+
+SerialCommunication/SerialCommunicationControler.s: SerialCommunication/SerialCommunicationControler.cpp.s
+.PHONY : SerialCommunication/SerialCommunicationControler.s
+
+# target to generate assembly for a file
+SerialCommunication/SerialCommunicationControler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MultiPass.dir/build.make CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationControler.cpp.s
+.PHONY : SerialCommunication/SerialCommunicationControler.cpp.s
+
 SerialCommunication/SerialCommunicationDialog.o: SerialCommunication/SerialCommunicationDialog.cpp.o
 .PHONY : SerialCommunication/SerialCommunicationDialog.o
 
@@ -410,6 +434,9 @@ help:
 	@echo "... SerialCommunication/SerialCommunication.o"
 	@echo "... SerialCommunication/SerialCommunication.i"
 	@echo "... SerialCommunication/SerialCommunication.s"
+	@echo "... SerialCommunication/SerialCommunicationControler.o"
+	@echo "... SerialCommunication/SerialCommunicationControler.i"
+	@echo "... SerialCommunication/SerialCommunicationControler.s"
 	@echo "... SerialCommunication/SerialCommunicationDialog.o"
 	@echo "... SerialCommunication/SerialCommunicationDialog.i"
 	@echo "... SerialCommunication/SerialCommunicationDialog.s"

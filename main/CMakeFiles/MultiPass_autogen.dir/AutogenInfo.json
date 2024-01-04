@@ -397,6 +397,12 @@
 			null
 		],
 		[
+			"/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunicationControler.h",
+			"Mu",
+			"KPTPPBDW7Q/moc_SerialCommunicationControler.cpp",
+			null
+		],
+		[
 			"/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunicationDialog.h",
 			"Mu",
 			"KPTPPBDW7Q/moc_SerialCommunicationDialog.cpp",
@@ -500,6 +506,11 @@
 		],
 		[
 			"/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunication.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunicationControler.cpp",
 			"Mu",
 			null
 		],

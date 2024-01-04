@@ -1,12 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'SerialCommunication.h'
+** Meta object code from reading C++ file 'SerialCommunicationControler.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.6.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../SerialCommunication/SerialCommunication.h"
+#include "../../SerialCommunication/SerialCommunicationControler.h"
 #include <QtCore/qmetatype.h>
 
 #if __has_include(<QtCore/qtmochelpers.h>)
@@ -19,7 +19,7 @@ QT_BEGIN_MOC_NAMESPACE
 #include <memory>
 
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'SerialCommunication.h' doesn't include <QObject>."
+#error "The header file 'SerialCommunicationControler.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.6.1. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -36,44 +36,44 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSSerialCommunicationENDCLASS_t {};
-static constexpr auto qt_meta_stringdata_CLASSSerialCommunicationENDCLASS = QtMocHelpers::stringData(
-    "SerialCommunication",
-    "imageSentSuccessfully",
+struct qt_meta_stringdata_CLASSControllerENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSControllerENDCLASS = QtMocHelpers::stringData(
+    "Controller",
+    "processingFinished",
     "",
-    "errorOccurred",
+    "processingError",
     "errorMessage"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
-struct qt_meta_stringdata_CLASSSerialCommunicationENDCLASS_t {
+struct qt_meta_stringdata_CLASSControllerENDCLASS_t {
     uint offsetsAndSizes[10];
-    char stringdata0[20];
-    char stringdata1[22];
+    char stringdata0[11];
+    char stringdata1[19];
     char stringdata2[1];
-    char stringdata3[14];
+    char stringdata3[16];
     char stringdata4[13];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_CLASSSerialCommunicationENDCLASS_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_CLASSSerialCommunicationENDCLASS_t qt_meta_stringdata_CLASSSerialCommunicationENDCLASS = {
+    uint(sizeof(qt_meta_stringdata_CLASSControllerENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSControllerENDCLASS_t qt_meta_stringdata_CLASSControllerENDCLASS = {
     {
-        QT_MOC_LITERAL(0, 19),  // "SerialCommunication"
-        QT_MOC_LITERAL(20, 21),  // "imageSentSuccessfully"
-        QT_MOC_LITERAL(42, 0),  // ""
-        QT_MOC_LITERAL(43, 13),  // "errorOccurred"
-        QT_MOC_LITERAL(57, 12)   // "errorMessage"
+        QT_MOC_LITERAL(0, 10),  // "Controller"
+        QT_MOC_LITERAL(11, 18),  // "processingFinished"
+        QT_MOC_LITERAL(30, 0),  // ""
+        QT_MOC_LITERAL(31, 15),  // "processingError"
+        QT_MOC_LITERAL(47, 12)   // "errorMessage"
     },
-    "SerialCommunication",
-    "imageSentSuccessfully",
+    "Controller",
+    "processingFinished",
     "",
-    "errorOccurred",
+    "processingError",
     "errorMessage"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSSerialCommunicationENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSControllerENDCLASS[] = {
 
  // content:
       12,       // revision
@@ -97,46 +97,46 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSSerialCommunicationENDCLASS[] = 
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject SerialCommunication::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject Controller::staticMetaObject = { {
     QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_CLASSSerialCommunicationENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSSerialCommunicationENDCLASS,
+    qt_meta_stringdata_CLASSControllerENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSControllerENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSSerialCommunicationENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSControllerENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<SerialCommunication, std::true_type>,
-        // method 'imageSentSuccessfully'
+        QtPrivate::TypeAndForceComplete<Controller, std::true_type>,
+        // method 'processingFinished'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'errorOccurred'
+        // method 'processingError'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
     >,
     nullptr
 } };
 
-void SerialCommunication::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Controller::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<SerialCommunication *>(_o);
+        auto *_t = static_cast<Controller *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->imageSentSuccessfully(); break;
-        case 1: _t->errorOccurred((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->processingFinished(); break;
+        case 1: _t->processingError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (SerialCommunication::*)();
-            if (_t _q_method = &SerialCommunication::imageSentSuccessfully; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (Controller::*)();
+            if (_t _q_method = &Controller::processingFinished; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (SerialCommunication::*)(const QString & );
-            if (_t _q_method = &SerialCommunication::errorOccurred; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (Controller::*)(const QString & );
+            if (_t _q_method = &Controller::processingError; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
@@ -144,20 +144,20 @@ void SerialCommunication::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
     }
 }
 
-const QMetaObject *SerialCommunication::metaObject() const
+const QMetaObject *Controller::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *SerialCommunication::qt_metacast(const char *_clname)
+void *Controller::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSSerialCommunicationENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSControllerENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
 
-int SerialCommunication::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Controller::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
@@ -175,13 +175,13 @@ int SerialCommunication::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void SerialCommunication::imageSentSuccessfully()
+void Controller::processingFinished()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 
 // SIGNAL 1
-void SerialCommunication::errorOccurred(const QString & _t1)
+void Controller::processingError(const QString & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);

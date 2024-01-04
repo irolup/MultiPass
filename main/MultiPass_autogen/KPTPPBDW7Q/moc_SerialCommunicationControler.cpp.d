@@ -1,6 +1,14 @@
-/home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunication.cpp: /home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunication.h \
+/home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunicationControler.cpp: /home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunicationControler.h \
   /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/moc_predefs.h \
+  /home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunication.h \
+  /home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunicationDialog.h \
+  /home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/TransparentCircleWidget.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QList \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QObject \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QPoint \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QRect \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSize \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20functional.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20type_traits.h \
@@ -28,8 +36,11 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontainerfwd.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontainerinfo.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontainertools_impl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontiguouscache.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcoreevent.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdatastream.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdebug.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qexceptionhandling.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qflags.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qfloat16.h \
@@ -39,6 +50,7 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qgenericatomic.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qglobal.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qglobalstatic.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qhash.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qhashfunctions.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qiodevice.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qiodevicebase.h \
@@ -49,12 +61,14 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qlist.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qlogging.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmalloc.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmap.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmargins.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmath.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmetacontainer.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmetatype.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qminmax.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qnamespace.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qnativeinterface.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qnumeric.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qobject.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qobject_impl.h \
@@ -63,15 +77,22 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qoverload.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qpair.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qpoint.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qpointer.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qprocessordetection.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qrect.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qrefcount.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qscopedpointer.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qscopeguard.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qset.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qshareddata.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qshareddata_impl.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsize.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstring.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringbuilder.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringconverter_base.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringfwd.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringlist.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringliteral.h \
@@ -89,6 +110,7 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtcoreexports.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtdeprecationmarkers.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtenvironmentvariables.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtextstream.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtmetamacros.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtnoop.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtpreprocessorsupport.h \
@@ -99,22 +121,51 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtversionchecks.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtypeinfo.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtypes.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qurl.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qutf8stringview.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qvariant.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QImage \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QShowEvent \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QTransform \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qaction.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qbitmap.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qbrush.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qcolor.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qcursor.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qevent.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qeventpoint.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qfont.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qfontinfo.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qfontmetrics.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qicon.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qinputdevice.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qkeysequence.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpaintdevice.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainter.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpalette.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpen.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpixelformat.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpixmap.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpointingdevice.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpolygon.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qregion.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qrgb.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qrgba64.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qscreen.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtextoption.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtgui-config.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtguiexports.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtguiglobal.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtransform.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPort \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
@@ -122,6 +173,29 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportglobal.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsScene \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsView \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QSlider \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QWidget \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractslider.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsview.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qscrollarea.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qslider.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qwidget.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -213,6 +287,7 @@
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
   /usr/include/c++/11/chrono \
+  /usr/include/c++/11/climits \
   /usr/include/c++/11/clocale \
   /usr/include/c++/11/cmath \
   /usr/include/c++/11/cstddef \

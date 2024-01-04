@@ -458,7 +458,11 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
- /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunicationDialog.cpp \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QImage \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
+ /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunicationControler.cpp \
+ /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunicationControler.h \
+ /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunication.h \
  /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunicationDialog.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsView \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsview.h \
@@ -480,6 +484,8 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
+ /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunicationDialog.cpp \
+ /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunicationDialog.h \
  /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_TransparentCircleWidget.cpp \
  /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/TransparentCircleWidget.h \
  /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/OVELE2FJD2/moc_mainWindow.cpp \

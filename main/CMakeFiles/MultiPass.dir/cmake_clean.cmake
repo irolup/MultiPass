@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o.d"
   "CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.o"
   "CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.o.d"
+  "CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationControler.cpp.o"
+  "CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationControler.cpp.o.d"
   "CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o"
   "CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o.d"
   "CMakeFiles/MultiPass.dir/SerialCommunication/TransparentCircleWidget.cpp.o"

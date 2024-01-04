@@ -5,6 +5,7 @@
 #include <QObject>
 #include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>
+#include <QImage>
 
 class SerialCommunication : public QObject
 {
@@ -16,10 +17,14 @@ public:
 
     void openSerialPort(const QString &portName);
     void closeSerialPort();
-    qint64 writeToSerialPort(const QByteArray &data);
+    void writeToSerialPort(const QString &imagePath);
 
 private:
     QSerialPort serialPort;
+
+    signals:
+        void imageSentSuccessfully();
+        void errorOccurred(const QString &errorMessage);
 };
 
 #endif // SERIALCOMMUNICATION_H

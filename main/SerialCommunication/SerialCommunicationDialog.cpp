@@ -61,6 +61,8 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     connect(exportImageButton, &QPushButton::clicked, this, &SerialCommunicationDialog::exportImage);
     imagePathFolderButton = new QPushButton("Open exported images path", this);
     connect(imagePathFolderButton, &QPushButton::clicked, this, &SerialCommunicationDialog::openExportedImagesFolder);
+    selectFileToSendButton = new QPushButton("Select file to send", this);
+    connect(selectFileToSendButton, &QPushButton::clicked, this, &SerialCommunicationDialog::selectFileToSend);
     connectButton = new QPushButton("Connect to Serial Port", this);
     //connectButton->setFixedSize(30,150);  // Set the desired height
     connect(connectButton, &QPushButton::clicked, this, &SerialCommunicationDialog::connectToSerialPort);
@@ -102,7 +104,9 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     leftLayout->setAlignment(exportImageButton,Qt::AlignLeft);
     leftLayout->addWidget(imagePathFolderButton, 10,0);
     leftLayout->setAlignment(imagePathFolderButton,Qt::AlignLeft);
-    leftLayout->addWidget(connectButton, 11,0);
+    leftLayout->addWidget(selectFileToSendButton,11,0);
+    leftLayout->setAlignment(selectFileToSendButton, Qt::AlignLeft);
+    leftLayout->addWidget(connectButton, 12,0);
     leftLayout->setSpacing(-400);
     leftLayout->setSizeConstraint(QLayout::SetFixedSize);
 
@@ -411,6 +415,27 @@ void SerialCommunicationDialog::openExportedImagesFolder() {
 
     // Open the folder dialog for viewing exported images
     QFileDialog::getExistingDirectory(this, "Open Exported Images Folder", folderPath, QFileDialog::ReadOnly);
+}
+
+void SerialCommunicationDialog::selectFileToSend() {
+// Set the initial directory for the file dialog
+    QString documentsPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+    QString initialDir = documentsPath + "/exportedImagesMultiPass";
+
+    // Open a file dialog for selecting a PNG file
+    QString filePath = QFileDialog::getOpenFileName(this, tr("Select PNG File"), initialDir, tr("PNG Files (*.png);;All Files (*)"));
+
+    // Check if the user selected a file
+    if (!filePath.isEmpty())
+    {
+        // Do something with the selected file path, for example, store it in a member variable
+        QString selectedFilePath = filePath;
+        qDebug() << "Selected File Path: " << selectedFilePath;
+    }
+    else
+    {
+        qDebug() << "No file selected.";
+    }
 }
 
 

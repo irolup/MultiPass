@@ -1,10 +1,12 @@
 // SerialCommunication.cpp
 #include "SerialCommunication.h"
 #include <QDebug>
+#include <QBuffer>
 
 SerialCommunication::SerialCommunication(QObject *parent) : QObject(parent)
 {
     // Set other default serial port settings if needed
+    serialPort.setPortName("/dev/ttyUSB0");
     serialPort.setBaudRate(QSerialPort::Baud9600);
     serialPort.setDataBits(QSerialPort::Data8);
     serialPort.setParity(QSerialPort::NoParity);
@@ -38,14 +40,30 @@ void SerialCommunication::closeSerialPort()
     }
 }
 
-qint64 SerialCommunication::writeToSerialPort(const QByteArray &data)
+void SerialCommunication::writeToSerialPort(const QString &imagePath)
 {
-    if (serialPort.isOpen()) {
-        qint64 bytesWritten = serialPort.write(data);
-        qDebug() << bytesWritten << " bytes written.";
-        return bytesWritten;
-    } else {
-        qDebug() << "Serial port is not open.";
-        return -1;
+    QImage image(imagePath);
+    if (image.isNull()) {
+        emit errorOccurred("Failed to load image");
+        return;
     }
+
+    QByteArray imageData;
+    QBuffer buffer(&imageData);
+    buffer.open(QIODevice::WriteOnly);
+    image.save(&buffer, "PNG");
+
+    if (!serialPort.open(QIODevice::ReadWrite)) {
+        emit errorOccurred("Failed to open serial port");
+        return;
+    }
+
+    qint64 bytesWritten = serialPort.write(imageData);
+    if (bytesWritten == -1) {
+        emit errorOccurred("Failed to write image data to serial port");
+        return;
+    }
+
+    emit imageSentSuccessfully();
+    serialPort.close();
 }

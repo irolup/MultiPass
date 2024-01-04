@@ -404,6 +404,8 @@ CMakeFiles/MultiPass.dir/Controller.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QImage \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
  /home/charlie/Documents/Multi/MultiPass/main/Insta/Insta.h \
  /home/charlie/Documents/Multi/MultiPass/main/Reddit/redditDialog.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \

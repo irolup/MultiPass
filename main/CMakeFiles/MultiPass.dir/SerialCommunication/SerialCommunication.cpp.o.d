@@ -312,12 +312,14 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QDebug \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdebug.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtextstream.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringconverter_base.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontiguouscache.h \
- /usr/include/c++/11/climits \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QImage \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtguiglobal.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtgui-config.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtguiexports.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qcolor.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qrgb.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qrgba64.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -326,6 +328,24 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpaintdevice.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qrect.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qmargins.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q23utility.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsize.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qpoint.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpixelformat.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtransform.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpolygon.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qregion.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qline.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QDebug \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdebug.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtextstream.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringconverter_base.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qcontiguouscache.h \
+ /usr/include/c++/11/climits \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qshareddata.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
@@ -333,4 +353,6 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qshareddata_impl.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qset.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qhash.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QBuffer \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qbuffer.h

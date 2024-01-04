@@ -155,6 +155,12 @@
 		<Unit filename="/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunication.h">
 			<Option target="MultiPass"/>
 		</Unit>
+		<Unit filename="/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunicationControler.cpp">
+			<Option target="MultiPass"/>
+		</Unit>
+		<Unit filename="/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunicationControler.h">
+			<Option target="MultiPass"/>
+		</Unit>
 		<Unit filename="/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunicationDialog.cpp">
 			<Option target="MultiPass"/>
 		</Unit>

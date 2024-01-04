@@ -464,6 +464,8 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QImage \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
  /home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunicationDialog.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsView \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsview.h \
