@@ -437,6 +437,7 @@ CMakeFiles/MultiPass.dir/Controller.cpp.o: Controller.cpp \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QRect \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSize \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QStandardPaths \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QString \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20functional.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
@@ -528,6 +529,7 @@ CMakeFiles/MultiPass.dir/Controller.cpp.o: Controller.cpp \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsize.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstandardpaths.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstring.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringbuilder.h \
@@ -619,10 +621,12 @@ CMakeFiles/MultiPass.dir/Controller.cpp.o: Controller.cpp \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QApplication \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QFileDialog \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGridLayout \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QHBoxLayout \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLabel \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLineEdit \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QMessageBox \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QVBoxLayout \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QWidget \
@@ -630,12 +634,14 @@ CMakeFiles/MultiPass.dir/Controller.cpp.o: Controller.cpp \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qapplication.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qboxlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qfiledialog.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgridlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlabel.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayoutitem.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlineedit.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qmessagebox.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
@@ -971,6 +977,7 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: MultiPass_aut
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QRect \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSize \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QStandardPaths \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QString \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20functional.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
@@ -1059,6 +1066,7 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: MultiPass_aut
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsize.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstandardpaths.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstring.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringbuilder.h \
@@ -1151,6 +1159,7 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: MultiPass_aut
   /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QFileDialog \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsScene \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsView \
@@ -1158,6 +1167,7 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: MultiPass_aut
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QHBoxLayout \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLabel \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLineEdit \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QMessageBox \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QSlider \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QVBoxLayout \
@@ -1167,6 +1177,7 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: MultiPass_aut
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractslider.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qboxlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qfiledialog.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
@@ -1176,6 +1187,7 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: MultiPass_aut
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayoutitem.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlineedit.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qmessagebox.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qscrollarea.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
@@ -1495,6 +1507,7 @@ CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o: Reddit/redditDialog.cpp \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QRect \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSize \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QStandardPaths \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QString \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20functional.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
@@ -1583,6 +1596,7 @@ CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o: Reddit/redditDialog.cpp \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsize.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstandardpaths.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstring.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringbuilder.h \
@@ -1663,21 +1677,25 @@ CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o: Reddit/redditDialog.cpp \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QFileDialog \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGridLayout \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QHBoxLayout \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLabel \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLineEdit \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QMessageBox \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QVBoxLayout \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractbutton.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qboxlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qfiledialog.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgridlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlabel.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayoutitem.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlineedit.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qmessagebox.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
@@ -4297,6 +4315,7 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: mainWindow/mainWindow.cpp 
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QRect \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSize \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QSizeF \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QStandardPaths \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QString \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20functional.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
@@ -4388,6 +4407,7 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: mainWindow/mainWindow.cpp 
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qsize.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstandardpaths.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstring.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstringbuilder.h \
@@ -4484,6 +4504,7 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: mainWindow/mainWindow.cpp 
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QApplication \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QButtonGroup \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QFileDialog \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsScene \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsView \
@@ -4491,6 +4512,7 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: mainWindow/mainWindow.cpp 
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QHBoxLayout \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLabel \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLineEdit \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QMessageBox \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QSlider \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QVBoxLayout \
@@ -4502,6 +4524,7 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: mainWindow/mainWindow.cpp 
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qboxlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qbuttongroup.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qfiledialog.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
@@ -4511,6 +4534,7 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: mainWindow/mainWindow.cpp 
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayout.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlayoutitem.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlineedit.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qmessagebox.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qscrollarea.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
@@ -4831,12 +4855,6 @@ SerialCommunication/TransparentCircleWidget.cpp:
 
 /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qsplitter.h:
 
-/home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qmessagebox.h:
-
-/home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QMessageBox:
-
-/home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstandardpaths.h:
-
 SerialCommunication/SerialCommunicationDialog.cpp:
 
 SerialCommunication/SerialCommunicationControler.cpp:
@@ -4858,10 +4876,6 @@ SerialCommunication/SerialCommunication.cpp:
 /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsScene:
 
 /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainter.h:
-
-/home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qfiledialog.h:
-
-/home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath:
 
 /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtmochelpers.h:
 
@@ -4919,11 +4933,19 @@ Insta/Insta.cpp:
 
 /usr/include/c++/11/bits/basic_ios.h:
 
+/home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qmessagebox.h:
+
 /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h:
+
+/home/charlie/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath:
+
+/home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qfiledialog.h:
 
 /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h:
 
 /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qapplication.h:
+
+/home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QMessageBox:
 
 /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QLabel:
 
@@ -4958,6 +4980,8 @@ Insta/Insta.cpp:
 /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qurl.h:
 
 /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qtimezone.h:
+
+/home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstandardpaths.h:
 
 Reddit/redditDialog.cpp:
 

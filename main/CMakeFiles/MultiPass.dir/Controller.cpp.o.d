@@ -466,4 +466,12 @@ CMakeFiles/MultiPass.dir/Controller.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgridlayout.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QHBoxLayout \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGridLayout \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgridlayout.h
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QStandardPaths \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qstandardpaths.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QFileDialog \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qfiledialog.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qdir.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QMessageBox \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qmessagebox.h

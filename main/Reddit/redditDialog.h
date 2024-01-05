@@ -16,8 +16,9 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QGridLayout>
-
-
+#include <QStandardPaths>
+#include <QFileDialog>
+#include <QMessageBox>
 
 class QLabel;
 
@@ -28,23 +29,32 @@ Q_OBJECT
 public:
     explicit RedditDialog(QWidget *parent = nullptr);
 
+private slots:
+    void chooseDownloadFolder();
+
 protected:
     void showEvent(QShowEvent *event) override;
 
 private:
     QHBoxLayout *mainLayout;
-    QVBoxLayout *leftLayout;
+    QGridLayout *leftLayout;
     QGridLayout *rightLayout;
     QLabel *SubRedditLabel;
     QLabel *ImageQuantitiesLabel;
     QLabel *PathFolderLabel;
     QLabel *ConfirmLabel;
     QLabel *DownloadedImagesLabel;
+    QLabel *SelectPathFolder;
+    QLabel *SelecDownloadFolderLabel;
     QLineEdit *SubRedditLineEdit;
     QLineEdit *ImageQuantitiesLineEdit;
     QLineEdit *PathFolderLineEdit;
-    QPushButton *ConfirmButton;
-    QString folderPath;
+    QPushButton *ConfirmURLButton;
+    QPushButton *ConfirmAllButton;
+    QPushButton *DownloadPathButton;
+    QString LoadFolderPath;
+    QString chosenDownloadFolderPath;
+    QString SelectedDownloadedPath;
 
 
 

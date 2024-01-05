@@ -404,7 +404,7 @@ void SerialCommunicationDialog::openExportedImagesFolder() {
     QString documentsPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
 
     // Create the "exportedImages" folder in the documents directory if it doesn't exist
-    QString folderPath = documentsPath + "/exportedImagesMultiPass";
+    QString folderPath = documentsPath + "/MultiPass/exportedImagesMultiPass";
     QDir folderDir(folderPath);
     if (!folderDir.exists()) {
         if (!folderDir.mkpath(folderPath)) {
