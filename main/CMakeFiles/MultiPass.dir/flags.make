@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/include -I/home/charlie/Documents/Multi/MultiPass/main/Reddit -I/home/charlie/Documents/Multi/MultiPass/main/Insta -I/home/charlie/Documents/Multi/MultiPass/main/mainWindow -I/home/charlie/Documents/Multi/MultiPass/main/SerialCommunication -isystem /home/charlie/Qt/6.6.1/gcc_64/include/QtCore -isystem /home/charlie/Qt/6.6.1/gcc_64/include -isystem /home/charlie/Qt/6.6.1/gcc_64/mkspecs/linux-g++ -isystem /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets -isystem /home/charlie/Qt/6.6.1/gcc_64/include/QtGui -isystem /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort
+CXX_INCLUDES = -I/home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/include -I/home/irolup/CLionProjects/MultiPass/main/Reddit -I/home/irolup/CLionProjects/MultiPass/main/Insta -I/home/irolup/CLionProjects/MultiPass/main/mainWindow -I/home/irolup/CLionProjects/MultiPass/main/SerialCommunication -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/mkspecs/linux-g++ -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui -isystem /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort
 
 CXX_FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
 

@@ -24,7 +24,7 @@ RedditDialog::RedditDialog(QWidget *parent) :
     // Set up the labels and other objects
     //Left Layout objects
     SubRedditLabel = new QLabel("Please enter a sub-reddit URL:", this);
-    SelectPathFolder = new QLabel("Please select an empty <br>folder path for downloads");
+    SelectPathFolder = new QLabel("Please select an empty <br> path for downloads");
     ImageQuantitiesLabel = new QLabel("Please enter the image quantities you<br> want to download (default = 10):", this);
     PathFolderLabel = new QLabel("Please enter the path for downloads:", this);
     ConfirmLabel = new QLabel("Confirm all:", this);
@@ -36,7 +36,7 @@ RedditDialog::RedditDialog(QWidget *parent) :
     PathFolderLineEdit = new QLineEdit(this);
     PathFolderLineEdit->setMaximumSize(200, 20);
     ConfirmURLButton = new QPushButton("Confirm URL", this);
-    DownloadPathButton = new QPushButton("Select file", this);
+    DownloadPathButton = new QPushButton("Select folder path", this);
     ConfirmAllButton = new QPushButton("Confirm", this);
     ConfirmAllButton->setMaximumSize(200, 20);
 

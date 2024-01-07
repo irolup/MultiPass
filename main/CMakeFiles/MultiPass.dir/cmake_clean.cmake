@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o"
   "CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o.d"
+  "CMakeFiles/MultiPass.dir/SerialCommunication/ConnectionSettingsDialog.cpp.o"
+  "CMakeFiles/MultiPass.dir/SerialCommunication/ConnectionSettingsDialog.cpp.o.d"
   "CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.o"
   "CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunication.cpp.o.d"
   "CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationControler.cpp.o"

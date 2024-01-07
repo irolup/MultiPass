@@ -18,6 +18,7 @@ public:
 
     void processImage(const QString &imagePath);
 
+
 private:
     SerialCommunication imageSender;
     SerialCommunicationDialog selectedImagePath;

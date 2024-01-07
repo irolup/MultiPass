@@ -63,7 +63,16 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     connect(imagePathFolderButton, &QPushButton::clicked, this, &SerialCommunicationDialog::openExportedImagesFolder);
     selectFileToSendButton = new QPushButton("Select file to send", this);
     connect(selectFileToSendButton, &QPushButton::clicked, this, &SerialCommunicationDialog::selectFileToSend);
+    comPortSelectorLabel = new QLabel("Please select the port you want to connect : ");
+    comPortComboBox = new QComboBox(this);
+    comPortComboBox->addItem("Automatic");
+    comPortComboBox->addItem("COM port 1");
+    comPortComboBox->addItem("COM port 2");
+    comPortComboBox->addItem("COM port 3");
+    comPortComboBox->addItem("COM port 4");
+    comPortComboBox->addItem("ttyUSB");
     connectButton = new QPushButton("Connect to Serial Port", this);
+    connect(comPortComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &SerialCommunicationDialog::updateSelectedComPort);
     //connectButton->setFixedSize(30,150);  // Set the desired height
     connect(connectButton, &QPushButton::clicked, this, &SerialCommunicationDialog::connectToSerialPort);
 
@@ -106,7 +115,9 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     leftLayout->setAlignment(imagePathFolderButton,Qt::AlignLeft);
     leftLayout->addWidget(selectFileToSendButton,11,0);
     leftLayout->setAlignment(selectFileToSendButton, Qt::AlignLeft);
-    leftLayout->addWidget(connectButton, 12,0);
+    leftLayout->addWidget(comPortSelectorLabel, 12,0);
+    leftLayout->addWidget(comPortComboBox,13,0);
+    leftLayout->addWidget(connectButton, 14,0);
     leftLayout->setSpacing(-400);
     leftLayout->setSizeConstraint(QLayout::SetFixedSize);
 
@@ -215,11 +226,6 @@ void SerialCommunicationDialog::chooseFile()
     }
 }
 
-
-void SerialCommunicationDialog::connectToSerialPort()
-{
-    // Implement the connection to the serial port here
-}
 
 bool SerialCommunicationDialog::eventFilter(QObject *obj, QEvent *event)
 {
@@ -437,7 +443,28 @@ void SerialCommunicationDialog::selectFileToSend() {
         qDebug() << "No file selected.";
     }
 }
+void SerialCommunicationDialog::connectToSerialPort()
+{
+    // Instantiate the ConnectionSettingsDialog and pass the parent (this)
+    connectionSettingsDialog = new ConnectionSettingsDialog(this);
 
+    // Show the ConnectionSettingsDialog
+    connectionSettingsDialog->exec();
+}
+
+void SerialCommunicationDialog::updateSelectedComPort(int index) {
+// Update the selectedComPort variable with the current choice
+    selectedComPort = comPortComboBox->itemText(index);
+    qDebug() << "Selected COM Port: " << selectedComPort;
+}
+
+QString SerialCommunicationDialog::getSelectedComPort() const {
+    if (selectedComPort.isNull() || selectedComPort.isEmpty()) {
+        // Return the default value (e.g., "Automatic")
+        return "Automatic";
+    }
+    return selectedComPort;
+}
 
 
 
