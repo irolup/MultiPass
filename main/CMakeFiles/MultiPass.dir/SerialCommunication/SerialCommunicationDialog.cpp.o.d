@@ -439,6 +439,17 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o: \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qlayoutitem.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qboxlayout.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunication.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QObject \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPort \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialport.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportglobal.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QImage \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QFileDialog \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qfiledialog.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qdir.h \

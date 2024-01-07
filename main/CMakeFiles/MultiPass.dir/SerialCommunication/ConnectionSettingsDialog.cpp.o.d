@@ -438,4 +438,15 @@ CMakeFiles/MultiPass.dir/SerialCommunication/ConnectionSettingsDialog.cpp.o: \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qwidget.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
- /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
+ /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunication.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QObject \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPort \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialport.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportglobal.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QImage \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo

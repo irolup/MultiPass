@@ -6,6 +6,7 @@
 #include <QVBoxLayout>
 #include "SerialCommunicationDialog.h"
 #include "SerialCommunication.h"
+#include <QSerialPortInfo>
 
 class SerialCommunicationDialog;
 
@@ -23,6 +24,7 @@ private:
     SerialCommunicationDialog *serialCommunicationDialogInstance;
     SerialCommunication *serialCommunicationInstance;
     QString selectedcomPortString;
+    QString serialPortName;
     QLabel *selectedcomPortLabel;
     QVBoxLayout *layout;
 };

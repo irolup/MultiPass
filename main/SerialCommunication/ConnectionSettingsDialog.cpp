@@ -1,5 +1,3 @@
-// ConnectionSettingsDialog.cpp
-
 #include "ConnectionSettingsDialog.h"
 
 ConnectionSettingsDialog::ConnectionSettingsDialog(SerialCommunicationDialog *parentDialog)
@@ -8,7 +6,30 @@ ConnectionSettingsDialog::ConnectionSettingsDialog(SerialCommunicationDialog *pa
     // Access the selected COM Port from the parentDialog
     selectedcomPortString = serialCommunicationDialogInstance->getSelectedComPort();
 
-    selectedcomPortLabel = new QLabel("Selected COM Port: " + selectedcomPortString, this);
+    QList<QSerialPortInfo> serialPorts = QSerialPortInfo::availablePorts();
+    for (const QSerialPortInfo &port : serialPorts) {
+        qDebug() << "Detected port:" << port.portName();
+    }
+
+    for (const QSerialPortInfo &port : serialPorts) {
+        #ifdef Q_OS_LINUX
+        if (port.portName().startsWith("tty")) {
+            serialPortName = port.portName();
+            break;
+        }
+        #elif defined(Q_OS_WIN)
+        if (port.portName().startsWith("COM")) {
+            serialPortName = port.portName();
+            break;
+        }
+        #endif
+    }
+
+    if (serialPortName.isEmpty()) {
+        qDebug() << "No suitable serial port found.";
+    }
+
+    selectedcomPortLabel = new QLabel("Available com port: " + serialPortName, this);
 
     layout = new QVBoxLayout(this);
     layout->addWidget(selectedcomPortLabel);

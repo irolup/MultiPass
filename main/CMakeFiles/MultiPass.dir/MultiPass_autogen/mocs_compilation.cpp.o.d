@@ -494,7 +494,6 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
  /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/ConnectionSettingsDialog.h \
- /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunication.cpp \
  /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunication.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QObject \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPort \
@@ -505,9 +504,11 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QImage \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qimage.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
+ /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunication.cpp \
+ /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunication.h \
  /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunicationControler.cpp \
  /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunicationControler.h \
- /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunication.h \
  /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_SerialCommunicationDialog.cpp \
  /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunicationDialog.h \
  /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_TransparentCircleWidget.cpp \

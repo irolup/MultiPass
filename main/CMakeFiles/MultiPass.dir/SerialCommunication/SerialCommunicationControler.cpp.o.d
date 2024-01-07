@@ -449,4 +449,5 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationControler.cpp.o:
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qlayout.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qlayoutitem.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qgridlayout.h
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo

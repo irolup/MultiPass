@@ -509,4 +509,6 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
  /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/ConnectionSettingsDialog.h \
- /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunicationDialog.h
+ /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunicationDialog.h \
+ /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunication.h \
+ /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo

@@ -1,6 +1,7 @@
 /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_ConnectionSettingsDialog.cpp: /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/ConnectionSettingsDialog.h \
   /home/irolup/CLionProjects/MultiPass/main/MultiPass_autogen/moc_predefs.h \
   /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/ConnectionSettingsDialog.h \
+  /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunication.h \
   /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/SerialCommunicationDialog.h \
   /home/irolup/CLionProjects/MultiPass/main/SerialCommunication/TransparentCircleWidget.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QList \
@@ -130,6 +131,7 @@
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QImage \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QShowEvent \
@@ -172,6 +174,12 @@
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPort \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialport.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportglobal.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QComboBox \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \

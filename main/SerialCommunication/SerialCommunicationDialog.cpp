@@ -70,7 +70,7 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     comPortComboBox->addItem("COM port 2");
     comPortComboBox->addItem("COM port 3");
     comPortComboBox->addItem("COM port 4");
-    comPortComboBox->addItem("ttyUSB");
+    comPortComboBox->addItem("ttyACM0");
     connectButton = new QPushButton("Connect to Serial Port", this);
     connect(comPortComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &SerialCommunicationDialog::updateSelectedComPort);
     //connectButton->setFixedSize(30,150);  // Set the desired height

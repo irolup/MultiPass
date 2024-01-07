@@ -2021,6 +2021,7 @@ CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o: Reddit/redditDialog.cpp \
 
 CMakeFiles/MultiPass.dir/SerialCommunication/ConnectionSettingsDialog.cpp.o: SerialCommunication/ConnectionSettingsDialog.cpp \
   SerialCommunication/ConnectionSettingsDialog.h \
+  SerialCommunication/SerialCommunication.h \
   SerialCommunication/SerialCommunicationDialog.h \
   SerialCommunication/TransparentCircleWidget.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QList \
@@ -2150,6 +2151,7 @@ CMakeFiles/MultiPass.dir/SerialCommunication/ConnectionSettingsDialog.cpp.o: Ser
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QImage \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QShowEvent \
@@ -2192,6 +2194,12 @@ CMakeFiles/MultiPass.dir/SerialCommunication/ConnectionSettingsDialog.cpp.o: Ser
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPort \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialport.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportglobal.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QComboBox \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
@@ -3406,6 +3414,7 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationControler.cpp.o:
 
 CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o: SerialCommunication/SerialCommunicationDialog.cpp \
   SerialCommunication/ConnectionSettingsDialog.h \
+  SerialCommunication/SerialCommunication.h \
   SerialCommunication/SerialCommunicationDialog.h \
   SerialCommunication/TransparentCircleWidget.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/QList \
@@ -3544,6 +3553,7 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o: Se
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qversiontagging.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QImage \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QMouseEvent \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QPainter \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/QPainterPath \
@@ -3590,6 +3600,12 @@ CMakeFiles/MultiPass.dir/SerialCommunication/SerialCommunicationDialog.cpp.o: Se
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPort \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPortInfo \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialport.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportglobal.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qserialportinfo.h \
+  /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtSerialPort/qtserialportexports.h \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QComboBox \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
   /home/irolup/Documents/Qt/6.6.1/gcc_64/include/QtWidgets/QFileDialog \
