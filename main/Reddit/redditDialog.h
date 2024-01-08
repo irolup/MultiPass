@@ -5,6 +5,7 @@
 #ifndef INSTAAPP_REDDITDIALOG_H
 #define INSTAAPP_REDDITDIALOG_H
 
+#include <qregularexpression.h>
 #include <QDialog>
 #include <QShowEvent>
 #include <QLabel>
@@ -19,6 +20,7 @@
 #include <QStandardPaths>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QTextBrowser>
 
 class QLabel;
 
@@ -28,10 +30,11 @@ Q_OBJECT
 
 public:
     explicit RedditDialog(QWidget *parent = nullptr);
-
+    QString getSubredditName();
+    QString getDownloadedImagesPath();
 private slots:
     void chooseDownloadFolder();
-
+    void confirmName();
 protected:
     void showEvent(QShowEvent *event) override;
 
@@ -41,21 +44,22 @@ private:
     QGridLayout *rightLayout;
     QLabel *SubRedditLabel;
     QLabel *ImageQuantitiesLabel;
-    QLabel *PathFolderLabel;
     QLabel *ConfirmLabel;
     QLabel *DownloadedImagesLabel;
     QLabel *SelectPathFolder;
     QLabel *SelecDownloadFolderLabel;
+    QLabel *EnteredNameLabel;
     QLineEdit *SubRedditLineEdit;
     QLineEdit *ImageQuantitiesLineEdit;
-    QLineEdit *PathFolderLineEdit;
-    QPushButton *ConfirmURLButton;
+    QPushButton *ConfirmNameButton;
     QPushButton *ConfirmAllButton;
     QPushButton *DownloadPathButton;
+    QPushButton *ConfirmQuantitiesButton;
+    QString enteredName;
     QString LoadFolderPath;
     QString chosenDownloadFolderPath;
     QString SelectedDownloadedPath;
-
+    QString downloadedImagesPath;
 
 
 

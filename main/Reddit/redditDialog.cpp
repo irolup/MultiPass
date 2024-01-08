@@ -6,6 +6,7 @@
 #include <QVBoxLayout>
 
 
+
 RedditDialog::RedditDialog(QWidget *parent) :
         QDialog(parent)
 {
@@ -23,20 +24,23 @@ RedditDialog::RedditDialog(QWidget *parent) :
 
     // Set up the labels and other objects
     //Left Layout objects
-    SubRedditLabel = new QLabel("Please enter a sub-reddit URL:", this);
+    SubRedditLabel = new QLabel("Please enter a sub-reddit name:", this);
+    EnteredNameLabel = new QLabel("URL: ", this);
+    EnteredNameLabel->setWordWrap(true);
     SelectPathFolder = new QLabel("Please select an empty <br> path for downloads");
-    ImageQuantitiesLabel = new QLabel("Please enter the image quantities you<br> want to download (default = 10):", this);
-    PathFolderLabel = new QLabel("Please enter the path for downloads:", this);
+    ImageQuantitiesLabel = new QLabel("Please enter the image quantities you<br> want to download (Max = 50):", this);
     ConfirmLabel = new QLabel("Confirm all:", this);
     SelecDownloadFolderLabel = new QLabel("Path : ",this);
+    SelecDownloadFolderLabel->setWordWrap(true);
     SubRedditLineEdit = new QLineEdit(this);
     SubRedditLineEdit->setMaximumSize(200, 20);
     ImageQuantitiesLineEdit = new QLineEdit(this);
     ImageQuantitiesLineEdit->setMaximumSize(200, 20);
-    PathFolderLineEdit = new QLineEdit(this);
-    PathFolderLineEdit->setMaximumSize(200, 20);
-    ConfirmURLButton = new QPushButton("Confirm URL", this);
+    ConfirmNameButton = new QPushButton("Confirm name", this);
+    connect(ConfirmNameButton, &QPushButton::clicked, this, &RedditDialog::confirmName);
     DownloadPathButton = new QPushButton("Select folder path", this);
+    connect(DownloadPathButton, &QPushButton::clicked, this, &RedditDialog::chooseDownloadFolder);
+    ConfirmQuantitiesButton = new QPushButton("Confirm quantities", this);
     ConfirmAllButton = new QPushButton("Confirm", this);
     ConfirmAllButton->setMaximumSize(200, 20);
 
@@ -49,17 +53,16 @@ RedditDialog::RedditDialog(QWidget *parent) :
     leftLayout->setColumnMinimumWidth(0,50);
     leftLayout->addWidget(SubRedditLabel,0,0);
     leftLayout->addWidget(SubRedditLineEdit,1,0);
-    leftLayout->addWidget(ConfirmURLButton,2,0 );
-    leftLayout->addWidget(SelectPathFolder,3,0);
-    leftLayout->addWidget(DownloadPathButton,4,0);
-    connect(DownloadPathButton, &QPushButton::clicked, this, &RedditDialog::chooseDownloadFolder);
-    leftLayout->addWidget(SelecDownloadFolderLabel,5,0);
-    leftLayout->addWidget(ImageQuantitiesLabel,6,0);
-    leftLayout->addWidget(ImageQuantitiesLineEdit,7,0);
-    leftLayout->addWidget(PathFolderLabel,8,0);
-    leftLayout->addWidget(PathFolderLineEdit,9,0);
-    leftLayout->addWidget(ConfirmLabel,10,0);
-    leftLayout->addWidget(ConfirmAllButton, 11, 0);
+    leftLayout->addWidget(EnteredNameLabel, 2,0);
+    leftLayout->addWidget(ConfirmNameButton, 3, 0 );
+    leftLayout->addWidget(SelectPathFolder,4,0);
+    leftLayout->addWidget(DownloadPathButton,5,0);
+    leftLayout->addWidget(SelecDownloadFolderLabel,6,0);
+    leftLayout->addWidget(ImageQuantitiesLabel,7,0);
+    leftLayout->addWidget(ImageQuantitiesLineEdit,8,0);
+    leftLayout->addWidget(ConfirmQuantitiesButton,11,0);
+    leftLayout->addWidget(ConfirmLabel,12,0);
+    leftLayout->addWidget(ConfirmAllButton, 13, 0);
 
 
     // Set up the labels for right layout
@@ -129,8 +132,8 @@ void RedditDialog::chooseDownloadFolder() {
     // Get the user's documents directory
     QString documentsPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
 
-    // Check if the "MultiPass/DownloadedImagesMultiPass" folder exists
-    QString initialPath = documentsPath + "/MultiPassMemory/DownloadedImagesMultiPass";
+    // Check if the "MultiDownloadPath" folder exists
+    QString initialPath = documentsPath + "/MultiDownloadPath";
     QDir initialDir(initialPath);
 
     // If the folder exists, set the initial path to that folder; otherwise, use the documents directory
@@ -144,23 +147,62 @@ void RedditDialog::chooseDownloadFolder() {
         // Update the path variable for later use
         chosenDownloadFolderPath = SelectedDownloadedPath;
 
-        // Create the "MultiPass" folder and "DownloadedImagesMultiPass" subfolder
-        QString folderPath = chosenDownloadFolderPath + "/MultiPass/DownloadedImagesMultiPass";
-        QDir folderDir(folderPath);
+        // Create the "MultiDownloadPath" folder
+        QString multiDownloadPath = chosenDownloadFolderPath + "/MultiDownloadPath";
+        QDir multiDownloadDir(multiDownloadPath);
 
-        SelecDownloadFolderLabel->setText("Path: <br>" + chosenDownloadFolderPath);
-        if (!folderDir.exists()) {
-            if (!folderDir.mkpath(folderPath)) {
+        if (!multiDownloadDir.exists()) {
+            if (!multiDownloadDir.mkpath(multiDownloadPath)) {
+                qDebug() << "Error creating folder.";
+                return;
+            }
+        }
+
+        // Create the "DownloadedImagesMultiPass" subfolder
+        downloadedImagesPath = multiDownloadPath + "/DownloadedImagesMultiPass";
+        QDir downloadedImagesDir(downloadedImagesPath);
+
+        SelecDownloadFolderLabel->setText("Path: <br>" + downloadedImagesPath);
+        if (!downloadedImagesDir.exists()) {
+            if (!downloadedImagesDir.mkpath(downloadedImagesPath)) {
                 qDebug() << "Error creating folder.";
                 return;
             }
         }
 
         // Indicate to the user the chosen path
-        QMessageBox::information(this, tr("Folder Chosen"), tr("Download folder chosen: %1").arg(chosenDownloadFolderPath));
+        QMessageBox::information(this, tr("Folder Chosen"), tr("Download folder chosen: %1").arg(downloadedImagesPath));
     } else {
         // User canceled the dialog or chose an invalid directory
         qDebug() << "User canceled or chose an invalid directory.";
     }
+    qDebug() << downloadedImagesPath;
 }
 
+void RedditDialog::confirmName(){
+    // Get the entered name from the QLineEdit
+    QString subredditName = SubRedditLineEdit->text();
+
+    // Check if the entered name contains spaces or invalid symbols
+    QRegularExpression validSubredditName("^[A-Za-z0-9_]+$");
+    if (!subredditName.isEmpty() && validSubredditName.match(subredditName).hasMatch()) {
+        // Valid name, construct the URL
+        enteredName = "https://www.reddit.com/r/" + subredditName;
+
+        // Update the QLabel to display the entered name
+        EnteredNameLabel->setText("URL: " + enteredName);
+
+        // You can use 'enteredName' in other parts of your code as needed
+    } else {
+        // Invalid name, indicate an error
+        QMessageBox::warning(this, tr("Error"), tr("Invalid subreddit name. Please avoid spaces and special characters."));
+    }
+}
+
+QString RedditDialog::getSubredditName() {
+    return SubRedditLineEdit->text();
+}
+
+QString RedditDialog::getDownloadedImagesPath() {
+    return downloadedImagesPath;
+}
