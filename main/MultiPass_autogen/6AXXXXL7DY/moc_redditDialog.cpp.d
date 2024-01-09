@@ -12,6 +12,7 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20memory.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q20type_traits.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/q23utility.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qabstractitemmodel.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qalgorithms.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qanystringview.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qarraydata.h \
@@ -173,9 +174,11 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtguiexports.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtguiglobal.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qtransform.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvalidator.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvector2d.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvectornd.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QComboBox \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QDialog \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QFileDialog \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGridLayout \
@@ -187,8 +190,12 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QTextBrowser \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QVBoxLayout \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractslider.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qboxlayout.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qcombobox.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qdialog.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qfiledialog.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
@@ -199,7 +206,13 @@
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qlineedit.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qmessagebox.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qrubberband.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qsizepolicy.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qslider.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qstyle.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qstyleoption.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtabbar.h \
+  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtabwidget.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtextbrowser.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtextedit.h \
   /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtwidgets-config.h \

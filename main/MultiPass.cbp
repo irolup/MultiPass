@@ -143,6 +143,12 @@
 		<Unit filename="/home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/mocs_compilation.cpp">
 			<Option target="MultiPass"/>
 		</Unit>
+		<Unit filename="/home/charlie/Documents/Multi/MultiPass/main/Reddit/RedditDownloader.cpp">
+			<Option target="MultiPass"/>
+		</Unit>
+		<Unit filename="/home/charlie/Documents/Multi/MultiPass/main/Reddit/RedditDownloader.h">
+			<Option target="MultiPass"/>
+		</Unit>
 		<Unit filename="/home/charlie/Documents/Multi/MultiPass/main/Reddit/redditDialog.cpp">
 			<Option target="MultiPass"/>
 		</Unit>

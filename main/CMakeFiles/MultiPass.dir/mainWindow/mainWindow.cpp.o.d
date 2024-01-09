@@ -469,6 +469,20 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtextbrowser.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtextedit.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QComboBox \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qcombobox.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qstyleoption.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvalidator.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qregularexpression.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qslider.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractslider.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qstyle.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtabbar.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qabstractitemmodel.h \
  /home/charlie/Documents/Multi/MultiPass/main/SerialCommunication/SerialCommunication.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QObject \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtSerialPort/QSerialPort \
@@ -490,20 +504,6 @@ CMakeFiles/MultiPass.dir/mainWindow/mainWindow.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QComboBox \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qcombobox.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qstyleoption.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qvalidator.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qregularexpression.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qslider.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractslider.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qstyle.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtabbar.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qrubberband.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qabstractitemmodel.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QSlider \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qslider.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QPoint \

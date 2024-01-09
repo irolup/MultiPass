@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MultiPass.dir/Insta/Insta.cpp.o.d"
   "CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/MultiPass.dir/Reddit/RedditDownloader.cpp.o"
+  "CMakeFiles/MultiPass.dir/Reddit/RedditDownloader.cpp.o.d"
   "CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o"
   "CMakeFiles/MultiPass.dir/Reddit/redditDialog.cpp.o.d"
   "CMakeFiles/MultiPass.dir/SerialCommunication/ConnectionSettingsDialog.cpp.o"

@@ -462,19 +462,6 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtextbrowser.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtextedit.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
- /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_ConnectionSettingsDialog.cpp \
- /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/ConnectionSettingsDialog.h \
- /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunicationDialog.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsView \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsview.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainter.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qscrollarea.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsScene \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
- /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QComboBox \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qcombobox.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -489,6 +476,19 @@ CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.o: \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qtabwidget.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qrubberband.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/moc_ConnectionSettingsDialog.cpp \
+ /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/ConnectionSettingsDialog.h \
+ /home/charlie/Documents/Multi/MultiPass/main/MultiPass_autogen/KPTPPBDW7Q/../../SerialCommunication/SerialCommunicationDialog.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsView \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsview.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainter.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qscrollarea.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsScene \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsscene.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qgraphicsitem.h \
+ /home/charlie/Qt/6.6.1/gcc_64/include/QtGui/qpainterpath.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/QSlider \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtWidgets/qslider.h \
  /home/charlie/Qt/6.6.1/gcc_64/include/QtCore/QPoint \

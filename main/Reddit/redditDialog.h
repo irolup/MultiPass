@@ -11,6 +11,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QString>
+#include <string>
 #include <QPushButton>
 #include <QPixmap>
 #include <QDir>
@@ -21,6 +22,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QTextBrowser>
+#include <QComboBox>
 
 class QLabel;
 
@@ -30,14 +32,15 @@ Q_OBJECT
 
 public:
     explicit RedditDialog(QWidget *parent = nullptr);
-    QString getSubredditName();
-    QString getDownloadedImagesPath();
+    std::string getSubredditURL();
+    std::string getDownloadedImagesPath();
     const int& getImageQuantities() const;
 private slots:
     void chooseDownloadFolder();
     void confirmName();
     void confirmQuantities();
     void confirmAll();
+    void updateUrlWithCategory();
 protected:
     void showEvent(QShowEvent *event) override;
 
@@ -54,6 +57,7 @@ private:
     QLabel *SelecDownloadFolderLabel;
     QLabel *EnteredNameLabel;
     QLabel *ImageQuantitiesLabelNumber;
+    QLabel *RedditChoiceLabel;
     QLineEdit *SubRedditLineEdit;
     QLineEdit *ImageQuantitiesLineEdit;
     QPushButton *ConfirmNameButton;
@@ -65,11 +69,8 @@ private:
     QString chosenDownloadFolderPath;
     QString SelectedDownloadedPath;
     QString downloadedImagesPath;
-
-
-
-
-
+    QString updatedUrl;
+    QComboBox *RedditChoiceComboBox;
 };
 
 #endif // REDDITDIALOG_H

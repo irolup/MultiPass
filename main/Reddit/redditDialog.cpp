@@ -43,7 +43,13 @@ RedditDialog::RedditDialog(QWidget *parent) :
     ConfirmQuantitiesButton = new QPushButton("Confirm quantities", this);
     connect(ConfirmQuantitiesButton, &QPushButton::clicked, this, &RedditDialog::confirmQuantities);
     ImageQuantitiesLabelNumber = new QLabel("Entered Quantity: ", this);
-    ConfirmAllButton = new QPushButton("Confirm", this);
+    RedditChoiceLabel = new QLabel("Please select the <br> category : ", this);
+    RedditChoiceComboBox = new QComboBox(this);
+    RedditChoiceComboBox->setMaximumSize(60,20);
+    RedditChoiceComboBox->addItem("Hot");
+    RedditChoiceComboBox->addItem("New");
+    connect(RedditChoiceComboBox, &QComboBox::currentIndexChanged, this, &RedditDialog::updateUrlWithCategory);
+    ConfirmAllButton = new QPushButton("Confirm all", this);
     connect(ConfirmAllButton, &QPushButton::clicked, this, &RedditDialog::confirmAll);
     ConfirmAllButton->setMaximumSize(200, 20);
 
@@ -65,8 +71,10 @@ RedditDialog::RedditDialog(QWidget *parent) :
     leftLayout->addWidget(ImageQuantitiesLabelNumber, 8,0 );
     leftLayout->addWidget(ImageQuantitiesLineEdit,9,0);
     leftLayout->addWidget(ConfirmQuantitiesButton,11,0);
-    leftLayout->addWidget(ConfirmLabel,12,0);
-    leftLayout->addWidget(ConfirmAllButton, 13, 0);
+    leftLayout->addWidget(RedditChoiceLabel, 12, 0, Qt::AlignLeft);
+    leftLayout->addWidget(RedditChoiceComboBox, 12, 0, Qt::AlignRight);
+    leftLayout->addWidget(ConfirmLabel,13,0);
+    leftLayout->addWidget(ConfirmAllButton, 14, 0);
 
 
     // Set up the labels for right layout
@@ -191,10 +199,10 @@ void RedditDialog::confirmName(){
     QRegularExpression validSubredditName("^[A-Za-z0-9_]+$");
     if (!subredditName.isEmpty() && validSubredditName.match(subredditName).hasMatch()) {
         // Valid name, construct the URL
-        enteredName = "https://www.reddit.com/r/" + subredditName;
+        enteredName = subredditName;
 
         // Update the QLabel to display the entered name
-        EnteredNameLabel->setText("URL: " + enteredName);
+        EnteredNameLabel->setText("URL: https://www.reddit.com/r/" + RedditChoiceComboBox->currentText() + "/" + enteredName);
 
         // You can use 'enteredName' in other parts of your code as needed
     } else {
@@ -219,22 +227,33 @@ void RedditDialog::confirmQuantities() {
     }
 }
 
-QString RedditDialog::getSubredditName() {
-    return enteredName;
+void RedditDialog::updateUrlWithCategory() {
+    updatedUrl = "https://www.reddit.com/r/" + RedditChoiceComboBox->currentText() + "/" + enteredName;
+    EnteredNameLabel->setText("URL: " + updatedUrl);
+    qDebug() << updatedUrl;
 }
 
-QString RedditDialog::getDownloadedImagesPath() {
-    return downloadedImagesPath;
+//Changer URL pour get lui update
+std::string RedditDialog::getSubredditURL() {
+    QString qstr = "https://www.reddit.com/r/" + RedditChoiceComboBox->currentText() + "/" + enteredName;
+    return qstr.toStdString();
+}
+
+std::string RedditDialog::getDownloadedImagesPath() {
+    return downloadedImagesPath.toStdString();
 }
 
 const int &RedditDialog::getImageQuantities() const {
     return imageQuantities;
 }
 
+//ONLY write inn the console all the choices
 void RedditDialog::confirmAll() {
-    qDebug() << "SubReddit URL : " << getSubredditName();
+    qDebug() << "SubReddit URL : " << getSubredditURL();
     qDebug() << "Download path : " << getDownloadedImagesPath();
     qDebug() << "Image quantity : " << getImageQuantities();
 }
+
+
 
 

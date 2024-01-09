@@ -238,6 +238,30 @@ MultiPass_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MultiPass.dir/build.make CMakeFiles/MultiPass.dir/MultiPass_autogen/mocs_compilation.cpp.s
 .PHONY : MultiPass_autogen/mocs_compilation.cpp.s
 
+Reddit/RedditDownloader.o: Reddit/RedditDownloader.cpp.o
+.PHONY : Reddit/RedditDownloader.o
+
+# target to build an object file
+Reddit/RedditDownloader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MultiPass.dir/build.make CMakeFiles/MultiPass.dir/Reddit/RedditDownloader.cpp.o
+.PHONY : Reddit/RedditDownloader.cpp.o
+
+Reddit/RedditDownloader.i: Reddit/RedditDownloader.cpp.i
+.PHONY : Reddit/RedditDownloader.i
+
+# target to preprocess a source file
+Reddit/RedditDownloader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MultiPass.dir/build.make CMakeFiles/MultiPass.dir/Reddit/RedditDownloader.cpp.i
+.PHONY : Reddit/RedditDownloader.cpp.i
+
+Reddit/RedditDownloader.s: Reddit/RedditDownloader.cpp.s
+.PHONY : Reddit/RedditDownloader.s
+
+# target to generate assembly for a file
+Reddit/RedditDownloader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MultiPass.dir/build.make CMakeFiles/MultiPass.dir/Reddit/RedditDownloader.cpp.s
+.PHONY : Reddit/RedditDownloader.cpp.s
+
 Reddit/redditDialog.o: Reddit/redditDialog.cpp.o
 .PHONY : Reddit/redditDialog.o
 
@@ -452,6 +476,9 @@ help:
 	@echo "... MultiPass_autogen/mocs_compilation.o"
 	@echo "... MultiPass_autogen/mocs_compilation.i"
 	@echo "... MultiPass_autogen/mocs_compilation.s"
+	@echo "... Reddit/RedditDownloader.o"
+	@echo "... Reddit/RedditDownloader.i"
+	@echo "... Reddit/RedditDownloader.s"
 	@echo "... Reddit/redditDialog.o"
 	@echo "... Reddit/redditDialog.i"
 	@echo "... Reddit/redditDialog.s"
