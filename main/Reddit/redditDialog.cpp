@@ -27,7 +27,7 @@ RedditDialog::RedditDialog(QWidget *parent) :
     SubRedditLabel = new QLabel("Please enter a sub-reddit name:", this);
     EnteredNameLabel = new QLabel("URL: ", this);
     EnteredNameLabel->setWordWrap(true);
-    SelectPathFolder = new QLabel("Please select an empty <br> path for downloads");
+    SelectPathFolder = new QLabel("Please select an empty <br> path for downloads", this);
     ImageQuantitiesLabel = new QLabel("Please enter the image quantities you<br> want to download (Max = 50):", this);
     ConfirmLabel = new QLabel("Confirm all:", this);
     SelecDownloadFolderLabel = new QLabel("Path : ",this);
@@ -41,7 +41,10 @@ RedditDialog::RedditDialog(QWidget *parent) :
     DownloadPathButton = new QPushButton("Select folder path", this);
     connect(DownloadPathButton, &QPushButton::clicked, this, &RedditDialog::chooseDownloadFolder);
     ConfirmQuantitiesButton = new QPushButton("Confirm quantities", this);
+    connect(ConfirmQuantitiesButton, &QPushButton::clicked, this, &RedditDialog::confirmQuantities);
+    ImageQuantitiesLabelNumber = new QLabel("Entered Quantity: ", this);
     ConfirmAllButton = new QPushButton("Confirm", this);
+    connect(ConfirmAllButton, &QPushButton::clicked, this, &RedditDialog::confirmAll);
     ConfirmAllButton->setMaximumSize(200, 20);
 
     //Right layout objects
@@ -59,7 +62,8 @@ RedditDialog::RedditDialog(QWidget *parent) :
     leftLayout->addWidget(DownloadPathButton,5,0);
     leftLayout->addWidget(SelecDownloadFolderLabel,6,0);
     leftLayout->addWidget(ImageQuantitiesLabel,7,0);
-    leftLayout->addWidget(ImageQuantitiesLineEdit,8,0);
+    leftLayout->addWidget(ImageQuantitiesLabelNumber, 8,0 );
+    leftLayout->addWidget(ImageQuantitiesLineEdit,9,0);
     leftLayout->addWidget(ConfirmQuantitiesButton,11,0);
     leftLayout->addWidget(ConfirmLabel,12,0);
     leftLayout->addWidget(ConfirmAllButton, 13, 0);
@@ -199,10 +203,38 @@ void RedditDialog::confirmName(){
     }
 }
 
+void RedditDialog::confirmQuantities() {
+    // Get the entered name from the ImageQuantitiesLineEdit
+    QString imageQuantitiesQstring = ImageQuantitiesLineEdit->text().trimmed();
+    bool ok;
+    imageQuantities = imageQuantitiesQstring.toInt(&ok);
+    // Check if the conversion was successful and the imageQuantities is within the desired range (0 to 51)
+    if (ok && imageQuantities >= 1 && imageQuantities <= 50) {
+        ImageQuantitiesLabelNumber->setText(QString("Entered Quantity: %1").arg(imageQuantities));
+        // Valid imageQuantities, you can use 'imageQuantities' in other parts of your code
+        qDebug() << "Valid imageQuantities: " << imageQuantities;
+    } else {
+        // Invalid input or out of range, indicate an error
+        QMessageBox::warning(this, tr("Error"), tr("Invalid imageQuantities. Please enter a valid number between 0 and 50."));
+    }
+}
+
 QString RedditDialog::getSubredditName() {
-    return SubRedditLineEdit->text();
+    return enteredName;
 }
 
 QString RedditDialog::getDownloadedImagesPath() {
     return downloadedImagesPath;
 }
+
+const int &RedditDialog::getImageQuantities() const {
+    return imageQuantities;
+}
+
+void RedditDialog::confirmAll() {
+    qDebug() << "SubReddit URL : " << getSubredditName();
+    qDebug() << "Download path : " << getDownloadedImagesPath();
+    qDebug() << "Image quantity : " << getImageQuantities();
+}
+
+

@@ -32,13 +32,17 @@ public:
     explicit RedditDialog(QWidget *parent = nullptr);
     QString getSubredditName();
     QString getDownloadedImagesPath();
+    const int& getImageQuantities() const;
 private slots:
     void chooseDownloadFolder();
     void confirmName();
+    void confirmQuantities();
+    void confirmAll();
 protected:
     void showEvent(QShowEvent *event) override;
 
 private:
+    int imageQuantities;
     QHBoxLayout *mainLayout;
     QGridLayout *leftLayout;
     QGridLayout *rightLayout;
@@ -49,6 +53,7 @@ private:
     QLabel *SelectPathFolder;
     QLabel *SelecDownloadFolderLabel;
     QLabel *EnteredNameLabel;
+    QLabel *ImageQuantitiesLabelNumber;
     QLineEdit *SubRedditLineEdit;
     QLineEdit *ImageQuantitiesLineEdit;
     QPushButton *ConfirmNameButton;
