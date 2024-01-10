@@ -19,7 +19,7 @@ I initiated this project with the aim of expanding my knowledge of C++ and web s
 
 
 #### Resize Functionality
-![Resize Functionality](screenshots/Resizer.png)
+![Resize Functionality](screenshots/ResizerScreenshot.png)
 
 #### Screen Send (Work in Progress)
 
