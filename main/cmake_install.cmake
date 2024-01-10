@@ -1,4 +1,4 @@
-# Install script for directory: /home/charlie/Documents/Multi/MultiPass/main
+# Install script for directory: /home/irolup/CLionProjects/MultiPass/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/charlie/Documents/Multi/MultiPass/main/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/irolup/CLionProjects/MultiPass/main/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

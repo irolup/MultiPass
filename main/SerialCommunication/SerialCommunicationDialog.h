@@ -6,6 +6,7 @@
 #include <QPushButton>
 #include <QGraphicsView>
 #include <QGraphicsScene>
+#include <QGraphicsWidget>
 #include <QGraphicsPixmapItem>
 #include <QComboBox>
 #include <QSlider>
@@ -68,6 +69,7 @@ private:
     QPixmap currentPixmap;
     TransparentCircleWidget *transparentCircleWidget;
     ConnectionSettingsDialog *connectionSettingsDialog;
+    QGraphicsRectItem *markerItem;
     QWidget *leftLayoutWidget(QLayout *leftLayout);
     QWidget *rightLayoutWidget(QLayout *rightLayout);
 

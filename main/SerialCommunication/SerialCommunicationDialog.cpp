@@ -33,6 +33,14 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     fileLabel = new QLabel("Choose a file to resize:", this);
     resizeImageLabel = new QLabel("Resize image. Left Mouse Click for resizing and Right Mouse Click for moving.", this);
     transparentCircleWidget = new TransparentCircleWidget(this);
+    transparentCircleWidget->setFixedSize(480, 480);
+    markerItem = nullptr;
+    // Create a red square marker in the top-left corner of the circle widget
+    markerItem = new QGraphicsRectItem(transparentCircleWidget->pos().x() - 5,
+                                       transparentCircleWidget->pos().y() - 5,
+                                       10, 10);
+    markerItem->setPen(QPen(Qt::red));
+
     fileButton = new QPushButton("Choose File", this);
     fileButton->setFixedHeight(30);  // Set the desired height
     fileButton->setFixedWidth(100);  // Set the desired width
@@ -84,6 +92,7 @@ SerialCommunicationDialog::SerialCommunicationDialog(QWidget *parent) : QDialog(
     imageScene->setBackgroundBrush(Qt::transparent);  // Add this line
     pixmapItem = new QGraphicsPixmapItem;
     imageScene->addItem(pixmapItem);
+    imageScene->addItem(markerItem);
     imageView->setScene(imageScene);
     imageView->setMouseTracking(true);
     imageView->installEventFilter(this);
@@ -178,46 +187,57 @@ void SerialCommunicationDialog::chooseFile()
         originalPixmap.load(filePath);
         if (!originalPixmap.isNull()) {
 
-        // Calculate the available space in the layout
-        int maxWidth = imageView->maximumWidth();
-        int maxHeight = imageView->maximumHeight();
+            // Resize the QGraphicsView
+            imageView->setFixedSize(1500, 1000);
 
-        // Resize the image to fit within the available space
-        int newWidth = originalPixmap.width();
-        int newHeight = originalPixmap.height();
+            // Calculate the available space in the layout
+            int maxWidth = imageView->maximumWidth();
+            int maxHeight = imageView->maximumHeight();
 
-        if (newWidth > maxWidth || newHeight > maxHeight)
-        {
-            // Calculate the aspect ratio
-            qreal aspectRatio = qreal(newWidth) / qreal(newHeight);
+            // Resize the image to fit within the available space
+            int newWidth = originalPixmap.width();
+            int newHeight = originalPixmap.height();
 
-            // Adjust width or height to fit within the available space
-            if (newWidth > maxWidth)
+            if (newWidth > maxWidth || newHeight > maxHeight)
             {
-                newWidth = maxWidth;
-                newHeight = int(newWidth / aspectRatio);
+                // Calculate the aspect ratio
+                qreal aspectRatio = qreal(newWidth) / qreal(newHeight);
+
+                // Adjust width or height to fit within the available space
+                if (newWidth > maxWidth)
+                {
+                    newWidth = maxWidth;
+                    newHeight = int(newWidth / aspectRatio);
+                }
+
+                if (newHeight > maxHeight)
+                {
+                    newHeight = maxHeight;
+                    newWidth = int(newHeight * aspectRatio);
+                }
             }
 
-            if (newHeight > maxHeight)
+            // Resize the image
+            pixmapItem->setPixmap(originalPixmap.scaled(newWidth, newHeight, Qt::KeepAspectRatio));
+            imageScene->setSceneRect(pixmapItem->pixmap().rect());
+
+
+
+
+            // If the position hasn't been set yet, set it to the top-left corner of the circle widget
+            if (pixmapItem->pos() == QPointF(0, 0))
             {
-                newHeight = maxHeight;
-                newWidth = int(newHeight * aspectRatio);
+                pixmapItem->setPos(transparentCircleWidget->pos().x() + 240, transparentCircleWidget->pos().y() + 240);
+                markerItem->setRect(transparentCircleWidget->pos().x(), transparentCircleWidget->pos().y() + transparentCircleWidget->height() - markerItem->rect().height(), markerItem->rect().width(), markerItem->rect().height());
+
+                qDebug() << "pixmapItem position: " << pixmapItem->pos();
+                qDebug() << transparentCircleWidget->pos();
             }
+
+            // Ensure that the transparent circle is on top of the loaded image
+            transparentCircleWidget->raise();
+            transparentCircleWidget->show();
         }
-
-        // Resize the image
-        pixmapItem->setPixmap(originalPixmap.scaled(newWidth, newHeight, Qt::KeepAspectRatio));
-        imageScene->setSceneRect(pixmapItem->pixmap().rect());
-
-
-        // Resize the QGraphicsView
-        imageView->setFixedSize(1500, 1000);
-        //pixmapItem->setPos(0, 0);
-
-        // Ensure that the transparent circle is on top of the loaded image
-        transparentCircleWidget->raise();
-        transparentCircleWidget->show();
-    }
     }
     else
     {
@@ -329,17 +349,6 @@ void SerialCommunicationDialog::exportImage()
     QPointF currentItemPos = pixmapItem->pos();
     QSizeF currentItemSize = pixmapItem->pixmap().size();
 
-    double totalPixelGaucheX =  (transparentCircleWidget->pos().x() + transparentCircleWidget->width() / 2.0) - ( pixmapItem->pixmap().width() )/2;
-    double totalPixelDroitX = pixmapItem->pixmap().width() /2;
-    double totalPixelHautY =  (transparentCircleWidget->pos().y() + transparentCircleWidget->height() / 2.0) - ( pixmapItem->pixmap().height() )/2;
-    double totalPixelBasY = pixmapItem->pixmap().height() /2;
-
-    //Pourcentage ratio
-    double deplacementPourcentageGaucheX = (((totalPixelGaucheX - (totalPixelGaucheX + currentItemPos.x())))/totalPixelGaucheX);
-    double deplacementPourcentageDroitX = (((totalPixelDroitX - (totalPixelDroitX - currentItemPos.x())))/totalPixelDroitX);
-    double deplacementPourcentageHautY = (((totalPixelHautY) - (totalPixelHautY + currentItemPos.y())))/totalPixelHautY;
-    double deplacementPourcentageBasY = (((totalPixelBasY) - (totalPixelBasY - currentItemPos.y())))/totalPixelBasY;
-
     // Get the user's documents directory
     QString documentsPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
 
@@ -352,17 +361,26 @@ void SerialCommunicationDialog::exportImage()
             return;
         }
     }
+
     // Prompt the user for the image name
     QString imageName = QInputDialog::getText(this, "Image Name", "Enter the image name:", QLineEdit::Normal, "exported_image");
     if (imageName.isEmpty())
         return;  // Return early if the user cancels or provides an empty name
 
-    // Calculate the position and size relative to the transparent circle widget
-    qreal relativeX = std::max(currentItemPos.x(), 0.0);
-    qreal relativeY = std::max(currentItemPos.y(), 0.0);
-    qreal relativeWidth = std::min(static_cast<qreal>(currentItemSize.width() - relativeX), static_cast<qreal>(transparentCircleWidget->width()));
-    qreal relativeHeight = std::min(static_cast<qreal>(currentItemSize.height() - relativeY), static_cast<qreal>(transparentCircleWidget->height()));
+    // Get the offset of the transparent circle widget
+    QPoint widgetOffset = transparentCircleWidget->pos();
 
+    // Calculate the position and size relative to the transparent circle widget
+    qreal relativeX = std::max(currentItemPos.x(), currentItemPos.x() - transparentCircleWidget->pos().x());
+    relativeX = (relativeX + 240);
+
+    qreal relativeY = std::max(currentItemPos.y(), qAbs(currentItemPos.y() - transparentCircleWidget->pos().y()));
+    qreal relativeWidth = std::min(static_cast<qreal>(currentItemSize.width()), static_cast<qreal>(transparentCircleWidget->width()));
+    qreal relativeHeight = std::min(static_cast<qreal>(currentItemSize.height()), static_cast<qreal>(transparentCircleWidget->height()));
+    qDebug() << "Current Item Pos: " << currentItemPos;
+    qDebug() << "Widget Offset: " << widgetOffset;
+    qDebug() << "New RelativeX: " << relativeX;
+    qDebug() << "transparentCircleWidget Parent Widget Pos: " << transparentCircleWidget->parentWidget()->pos();
 
     // Create a new pixmap with the size of the transparent circle widget (480x480)
     QPixmap exportPixmap(480, 480);
@@ -371,28 +389,11 @@ void SerialCommunicationDialog::exportImage()
     // Create a QPainter to draw the portion of the current image that fits within the transparent circle widget
     QPainter painter(&exportPixmap);
 
-    //Cas si x position is at left
-    if(currentItemPos.x() < 0) {
-        if(currentItemPos.y() < 0 ){
-            painter.drawPixmap(-480 * deplacementPourcentageGaucheX , 480 * deplacementPourcentageBasY, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
-        }
-        if(currentItemPos.y() > 0 ){
-            painter.drawPixmap(-480 * deplacementPourcentageGaucheX , -480 * deplacementPourcentageHautY, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
-        }
-    }
-    //Cas si x position is at right
-    if(currentItemPos.x() > 0){
-        if(currentItemPos.y() < 0 ){
-            painter.drawPixmap(480 * deplacementPourcentageDroitX, 480 * deplacementPourcentageBasY, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
-        }
-        if(currentItemPos.y() > 0 ){
-            painter.drawPixmap(480 * deplacementPourcentageDroitX  , -480 * deplacementPourcentageHautY, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
-        }
-    }
+    // Draw the pixmap, aligning it with the left corner of the transparent circle widget
+    painter.drawPixmap(0, 0, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
 
     // Save the exported image to the "exportedImages" folder in the documents directory
     QString exportFilePath = folderPath + "/" + imageName + ".jpg";
-
 
     if (!exportFilePath.isEmpty())
     {

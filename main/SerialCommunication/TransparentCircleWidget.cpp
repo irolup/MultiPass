@@ -7,6 +7,13 @@ TransparentCircleWidget::TransparentCircleWidget(QWidget *parent) : QWidget(pare
     setFixedSize(diameter, diameter);
     setAttribute(Qt::WA_TranslucentBackground);
     setAttribute(Qt::WA_NoSystemBackground, false);
+    // Calculate the initial position based on the radius
+    int radius = diameter / 2;
+    int initialX = -radius;  // Adjust this based on your desired center
+    int initialY = -radius;  // Adjust this based on your desired center
+
+    // Set the initial position
+    move(initialX, initialY);
 }
 
 void TransparentCircleWidget::paintEvent(QPaintEvent *event) {
@@ -26,9 +33,13 @@ void TransparentCircleWidget::paintEvent(QPaintEvent *event) {
     painter.setClipPath(path);
 
     painter.setOpacity(1);
+// Draw the red perimeter square
+    painter.setPen(QPen(Qt::red, 2));  // Set the pen color to red and width to 2
+    painter.drawRect(centerX - radius, centerY - radius, 2 * radius, 2 * radius);
 
     painter.setBrush(Qt::transparent);
     painter.drawEllipse(centerX - radius, centerY - radius, 2 * radius, 2 * radius);
+
 }
 
 
