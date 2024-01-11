@@ -227,7 +227,10 @@ void SerialCommunicationDialog::chooseFile()
             // If the position hasn't been set yet, set it to the top-left corner of the circle widget
             if (pixmapItem->pos() == QPointF(0, 0))
             {
-                pixmapItem->setPos(transparentCircleWidget->pos().x() + 240, transparentCircleWidget->pos().y() + 240);
+                qreal width = pixmapItem->pixmap().width();
+                qreal height = pixmapItem->pixmap().height();
+
+                pixmapItem->setPos(transparentCircleWidget->pos().x() + width/2, transparentCircleWidget->pos().y() + height/2);
                 markerItem->setRect(transparentCircleWidget->pos().x(), transparentCircleWidget->pos().y() + transparentCircleWidget->height() - markerItem->rect().height(), markerItem->rect().width(), markerItem->rect().height());
 
                 qDebug() << "pixmapItem position: " << pixmapItem->pos();
@@ -372,7 +375,6 @@ void SerialCommunicationDialog::exportImage()
 
     // Calculate the position and size relative to the transparent circle widget
     qreal relativeX = std::max(currentItemPos.x(), currentItemPos.x() - transparentCircleWidget->pos().x());
-    relativeX = (relativeX + 240);
 
     qreal relativeY = std::max(currentItemPos.y(), qAbs(currentItemPos.y() - transparentCircleWidget->pos().y()));
     qreal relativeWidth = std::min(static_cast<qreal>(currentItemSize.width()), static_cast<qreal>(transparentCircleWidget->width()));
@@ -444,6 +446,7 @@ void SerialCommunicationDialog::selectFileToSend() {
         qDebug() << "No file selected.";
     }
 }
+
 void SerialCommunicationDialog::connectToSerialPort()
 {
     // Instantiate the ConnectionSettingsDialog and pass the parent (this)
