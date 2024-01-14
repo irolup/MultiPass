@@ -352,60 +352,134 @@ void SerialCommunicationDialog::exportImage()
     QPointF currentItemPos = pixmapItem->pos();
     QSizeF currentItemSize = pixmapItem->pixmap().size();
 
-    // Get the user's documents directory
-    QString documentsPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+    // Calculate the center of the imageScene
+    QPointF sceneCenter = imageScene->sceneRect().center();
 
-    // Create the "exportedImages" folder in the documents directory if it doesn't exist
-    QString folderPath = documentsPath + "/exportedImagesMultiPass";
-    QDir folderDir(folderPath);
-    if (!folderDir.exists()) {
-        if (!folderDir.mkpath(folderPath)) {
-            qDebug() << "Error creating folder.";
-            return;
+    // Calculate the relative position of the pixmapItem with respect to the center of the imageScene
+    QPointF relativePos = currentItemPos - sceneCenter;
+
+    // Check if the relative position is within the limits of a 480x480 rectangle centered in the imageScene
+    //if (qAbs(relativePos.x()) <= 240 && qAbs(relativePos.y()) <= 240)
+
+        // Create a new pixmap with the size of the export area (480x480)
+        QPixmap exportPixmap(480, 480);
+        exportPixmap.fill(Qt::transparent);
+
+        // Create a QPainter to draw the portion of the current image within the limits
+        QPainter painter(&exportPixmap);
+
+        // Calculate the new position within the export area
+        qreal exportX = relativePos.x() + (transparentCircleWidget->width()/2);  // Center the image in the export area
+        qreal exportY = relativePos.y() + (transparentCircleWidget->width()/2);
+
+        // Draw the pixmap, aligning it with the left corner of the export area
+        painter.drawPixmap(0, 0, pixmapItem->pixmap(), exportX, exportY, currentItemSize.width(), currentItemSize.height());
+
+        // Save the exported image to the "exportedImages" folder in the documents directory
+        QString documentsPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+        QString folderPath = documentsPath + "/exportedImagesMultiPass";
+        QDir folderDir(folderPath);
+        if (!folderDir.exists()) {
+            if (!folderDir.mkpath(folderPath)) {
+                qDebug() << "Error creating folder.";
+                return;
+            }
         }
-    }
 
-    // Prompt the user for the image name
-    QString imageName = QInputDialog::getText(this, "Image Name", "Enter the image name:", QLineEdit::Normal, "exported_image");
-    if (imageName.isEmpty())
-        return;  // Return early if the user cancels or provides an empty name
+        // Prompt the user for the image name
+        QString imageName = QInputDialog::getText(this, "Image Name", "Enter the image name:", QLineEdit::Normal, "exported_image");
+        if (imageName.isEmpty())
+            return;  // Return early if the user cancels or provides an empty name
 
-    // Get the offset of the transparent circle widget
-    QPoint widgetOffset = transparentCircleWidget->pos();
+        QString exportFilePath = folderPath + "/" + imageName + ".jpg";
 
-    // Calculate the position and size relative to the transparent circle widget
-    qreal relativeX = std::max(currentItemPos.x(), currentItemPos.x() - transparentCircleWidget->pos().x());
-
-    qreal relativeY = std::max(currentItemPos.y(), qAbs(currentItemPos.y() - transparentCircleWidget->pos().y()));
-    qreal relativeWidth = std::min(static_cast<qreal>(currentItemSize.width()), static_cast<qreal>(transparentCircleWidget->width()));
-    qreal relativeHeight = std::min(static_cast<qreal>(currentItemSize.height()), static_cast<qreal>(transparentCircleWidget->height()));
-    qDebug() << "Current Item Pos: " << currentItemPos;
-    qDebug() << "Widget Offset: " << widgetOffset;
-    qDebug() << "New RelativeX: " << relativeX;
-    qDebug() << "transparentCircleWidget Parent Widget Pos: " << transparentCircleWidget->parentWidget()->pos();
-
-    // Create a new pixmap with the size of the transparent circle widget (480x480)
-    QPixmap exportPixmap(480, 480);
-    exportPixmap.fill(Qt::transparent);
-
-    // Create a QPainter to draw the portion of the current image that fits within the transparent circle widget
-    QPainter painter(&exportPixmap);
-
-    // Draw the pixmap, aligning it with the left corner of the transparent circle widget
-    painter.drawPixmap(0, 0, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
-
-    // Save the exported image to the "exportedImages" folder in the documents directory
-    QString exportFilePath = folderPath + "/" + imageName + ".jpg";
-
-    if (!exportFilePath.isEmpty())
-    {
-        if (!exportPixmap.save(exportFilePath, "JPEG"))
+        if (!exportFilePath.isEmpty())
         {
-            qDebug() << "Error saving image.";
+            if (!exportPixmap.save(exportFilePath, "JPEG"))
+            {
+                qDebug() << "Error saving image.";
+            }
         }
-    }
-    QMessageBox::information(this, "Image Exported", imageName + exportFilePath);
-    qDebug() << "Export File Path: " << exportFilePath;
+        QMessageBox::information(this, "Image Exported", imageName + exportFilePath);
+        qDebug() << "Export File Path: " << exportFilePath;
+
+
+
+
+
+
+
+    //// Check if a file is selected
+    //if (pixmapItem->pixmap().isNull())
+    //    return;
+//
+    //// Get the current position and size of the image item
+    //QPointF currentItemPos = pixmapItem->pos();
+    //QSizeF currentItemSize = pixmapItem->pixmap().size();
+//
+    //// Get the user's documents directory
+    //QString documentsPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+    //// Create the "exportedImages" folder in the documents directory if it doesn't exist
+    //QString folderPath = documentsPath + "/exportedImagesMultiPass";
+    //QDir folderDir(folderPath);
+    //if (!folderDir.exists()) {
+    //    if (!folderDir.mkpath(folderPath)) {
+    //        qDebug() << "Error creating folder.";
+    //        return;
+    //    }
+    //}
+//
+    //// Prompt the user for the image name
+    //QString imageName = QInputDialog::getText(this, "Image Name", "Enter the image name:", QLineEdit::Normal, "exported_image");
+    //if (imageName.isEmpty())
+    //    return;  // Return early if the user cancels or provides an empty name
+//
+    //// Get the offset of the transparent circle widget
+    //QPoint widgetOffset = transparentCircleWidget->pos();
+//
+    //// Calculate the position and size relative to the transparent circle widget
+    ////qreal relativeX = std::max(currentItemPos.x(), currentItemPos.x() - transparentCircleWidget->pos().x());
+    ////qreal relativeY = std::max(currentItemPos.y(), qAbs(currentItemPos.y() - transparentCircleWidget->pos().y()));
+    ////qreal relativeWidth = std::min(static_cast<qreal>(currentItemSize.width()), static_cast<qreal>(transparentCircleWidget->width()));
+    ////qreal relativeHeight = std::min(static_cast<qreal>(currentItemSize.height()), static_cast<qreal>(transparentCircleWidget->height()));
+    //// Calculate the position and size relative to the transparent circle widget
+    //qreal relativeX = currentItemPos.x() - transparentCircleWidget->pos().x();
+    //qreal relativeY = currentItemPos.y() - transparentCircleWidget->pos().y();
+//
+    //// Ensure that relativeX and relativeY are non-negative
+    //relativeX = qMax(relativeX, 0.0);
+    //relativeY = qMax(relativeY, 0.0);
+//
+    //qDebug() << "Current Item Pos: " << currentItemPos;
+    //qDebug() << "Widget Offset: " << widgetOffset;
+    //qDebug() << "New RelativeX: " << relativeX;
+    //qDebug() << "transparentCircleWidget Parent Widget Pos: " << transparentCircleWidget->parentWidget()->pos();
+//
+    //// Create a new pixmap with the size of the transparent circle widget (480x480)
+    //QPixmap exportPixmap(480, 480);
+    //exportPixmap.fill(Qt::transparent);
+//
+    //// Create a QPainter to draw the portion of the current image that fits within the transparent circle widget
+    //QPainter painter(&exportPixmap);
+//
+    //// Draw the pixmap, aligning it with the left corner of the transparent circle widget
+    ////painter.drawPixmap(0, 0, pixmapItem->pixmap(), relativeX, relativeY, relativeWidth, relativeHeight);
+//
+    //// Draw the pixmap, aligning it with the left corner of the transparent circle widget
+    //painter.drawPixmap(0, 0, pixmapItem->pixmap(), relativeX, relativeY, currentItemSize.width(), currentItemSize.height());
+//
+    //// Save the exported image to the "exportedImages" folder in the documents directory
+    //QString exportFilePath = folderPath + "/" + imageName + ".jpg";
+//
+    //if (!exportFilePath.isEmpty())
+    //{
+    //    if (!exportPixmap.save(exportFilePath, "JPEG"))
+    //    {
+    //        qDebug() << "Error saving image.";
+    //    }
+    //}
+    //QMessageBox::information(this, "Image Exported", imageName + exportFilePath);
+    //qDebug() << "Export File Path: " << exportFilePath;
 }
 
 void SerialCommunicationDialog::openExportedImagesFolder() {
@@ -469,7 +543,3 @@ QString SerialCommunicationDialog::getSelectedComPort() const {
     }
     return selectedComPort;
 }
-
-
-
-

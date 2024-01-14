@@ -1,7 +1,7 @@
 CMakeFiles/MultiPass.dir/Reddit/RedditDownloader.cpp.o: \
- /home/charlie/Documents/Multi/MultiPass/main/Reddit/RedditDownloader.cpp \
+ /home/irolup/CLionProjects/MultiPass/main/Reddit/RedditDownloader.cpp \
  /usr/include/stdc-predef.h \
- /home/charlie/Documents/Multi/MultiPass/main/Reddit/RedditDownloader.h \
+ /home/irolup/CLionProjects/MultiPass/main/Reddit/RedditDownloader.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
