@@ -1,8 +1,8 @@
-## Projet Abandonné
+# Projet Abandonné
 
 Ce projet n'est plus actif et n'est plus maintenu. Les fonctionnalités existantes peuvent ne plus fonctionner correctement avec les versions récentes des dépendances ou des plateformes.
 
-# My C++ Project
+## My C++ Project
 This is a personal project I created on GitHub using C++. The application encompasses various functionalities.
 
 ## Features
