@@ -1,4 +1,3 @@
-##AVERTISSEMENT
 ## Projet Abandonné
 
 Ce projet n'est plus actif et n'est plus maintenu. Les fonctionnalités existantes peuvent ne plus fonctionner correctement avec les versions récentes des dépendances ou des plateformes.
