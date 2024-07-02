@@ -5,7 +5,7 @@ Ce projet n'est plus actif et n'est plus maintenu. Les fonctionnalités existant
 ## My C++ Project
 This is a personal project I created on GitHub using C++. The application encompasses various functionalities.
 
-## Features
+## Wanted Features
 - Download the latest images posted on a SubReddit.
 - View the downloaded images in a window.
 - Automatically upload images to an Instagram page (work in progress).
